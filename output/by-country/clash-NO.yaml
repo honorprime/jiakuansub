@@ -4,14 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇴 NO 01 - xiaohe
+- name: 🇳🇴 NO 01 - prime
   type: ss
   server: 185.213.23.63
   port: 990
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   udp: true
-- name: 🇳🇴 NO 02 - xiaohe
+- name: 🇳🇴 NO 02 - prime
   type: vless
   server: 151.242.168.125
   port: 390
@@ -23,7 +23,7 @@ proxies:
     public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
   servername: bowandbead.com
   client-fingerprint: ios
-- name: 🇳🇴 NO 03 - xiaohe
+- name: 🇳🇴 NO 03 - prime
   type: vless
   server: 151.242.168.125
   port: 390
@@ -35,21 +35,30 @@ proxies:
     public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
   servername: bowandbead.com
   client-fingerprint: qq
+- name: 🇳🇴 NO 04 - prime
+  type: ss
+  server: 185.213.23.63
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇴 NO 01 - xiaohe
-  - 🇳🇴 NO 02 - xiaohe
-  - 🇳🇴 NO 03 - xiaohe
+  - 🇳🇴 NO 01 - prime
+  - 🇳🇴 NO 02 - prime
+  - 🇳🇴 NO 03 - prime
+  - 🇳🇴 NO 04 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇴 NO 01 - xiaohe
-  - 🇳🇴 NO 02 - xiaohe
-  - 🇳🇴 NO 03 - xiaohe
+  - 🇳🇴 NO 01 - prime
+  - 🇳🇴 NO 02 - prime
+  - 🇳🇴 NO 03 - prime
+  - 🇳🇴 NO 04 - prime
 rules:
 - MATCH,PROXIES

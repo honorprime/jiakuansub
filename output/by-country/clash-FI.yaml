@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 FI 01 - xiaohe
+- name: 🇫🇮 FI 01 - prime
   type: vless
   server: 185.79.138.71
   port: 448
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 FI 01 - xiaohe
+  - 🇫🇮 FI 01 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 FI 01 - xiaohe
+  - 🇫🇮 FI 01 - prime
 rules:
 - MATCH,PROXIES
