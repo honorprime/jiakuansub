@@ -17,18 +17,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - prime
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 03 - prime
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -40,9 +28,16 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
+- name: 🇮🇳 印度 (India) 03 - prime
+  type: ss
+  server: 172.105.39.124
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
 - name: 🇮🇳 印度 (India) 04 - prime
   type: vless
   server: 194.61.31.126
@@ -54,7 +49,31 @@ proxies:
   reality-opts:
     public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 05 - prime
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 06 - prime
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
+  servername: www.apple.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +83,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - prime
   - 🇮🇳 印度 (India) 03 - prime
   - 🇮🇳 印度 (India) 04 - prime
+  - 🇮🇳 印度 (India) 05 - prime
+  - 🇮🇳 印度 (India) 06 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,5 +94,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - prime
   - 🇮🇳 印度 (India) 03 - prime
   - 🇮🇳 印度 (India) 04 - prime
+  - 🇮🇳 印度 (India) 05 - prime
+  - 🇮🇳 印度 (India) 06 - prime
 rules:
 - MATCH,PROXIES
