@@ -16,28 +16,32 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇨 SC 02 - prime
   type: vless
-  server: 45.130.125.96
+  server: www.speedtest.net
   port: 443
-  uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
+  uuid: fae09ec8-642b-4750-a019-27a97cd967fd
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: dfsuporte.garena.com.ex33r.eu.cc
+  servername: ez-3e9698.ezaccess1ec1f0c.workers.dev
   network: ws
   ws-opts:
-    path: /id-pusat
+    path: /eyJqdW5rIjoib0FkbVU0Vm5ITkQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
     headers:
-      Host: dfsuporte.garena.com.ex33r.eu.cc
+      Host: ez-3e9698.ezaccess1ec1f0c.workers.dev
 - name: 🇸🇨 SC 03 - prime
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: xstack.mahanfixe.workers.dev
+  port: 443
+  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: xstack.mahanfixe.workers.dev
+  network: ws
+  ws-opts:
+    path: /xiron
+    headers:
+      Host: xstack.mahanfixe.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
