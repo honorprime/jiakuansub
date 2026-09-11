@@ -6,42 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - prime",
-        "🇫🇮 FI 02 - prime",
-        "🇫🇮 FI 03 - prime",
-        "🇫🇮 FI 04 - prime",
-        "🇫🇮 FI 05 - prime",
-        "🇫🇮 FI 06 - prime",
-        "🇫🇮 FI 07 - prime",
-        "🇫🇮 FI 08 - prime",
-        "🇫🇮 FI 09 - prime",
-        "🇫🇮 FI 10 - prime",
-        "🇫🇮 FI 11 - prime",
-        "🇫🇮 FI 12 - prime",
-        "🇫🇮 FI 13 - prime",
-        "🇫🇮 FI 14 - prime",
-        "🇫🇮 FI 15 - prime"
+        "🇫🇮 FI 01 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - prime",
-        "🇫🇮 FI 02 - prime",
-        "🇫🇮 FI 03 - prime",
-        "🇫🇮 FI 04 - prime",
-        "🇫🇮 FI 05 - prime",
-        "🇫🇮 FI 06 - prime",
-        "🇫🇮 FI 07 - prime",
-        "🇫🇮 FI 08 - prime",
-        "🇫🇮 FI 09 - prime",
-        "🇫🇮 FI 10 - prime",
-        "🇫🇮 FI 11 - prime",
-        "🇫🇮 FI 12 - prime",
-        "🇫🇮 FI 13 - prime",
-        "🇫🇮 FI 14 - prime",
-        "🇫🇮 FI 15 - prime"
+        "🇫🇮 FI 01 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
