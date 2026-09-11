@@ -7,28 +7,18 @@ proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - prime
   type: ss
   server: 141.164.45.187
-  port: 7001
+  port: 9090
   cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  password: Y6R9pAtvxxzmGC
   udp: true
 - name: 🇰🇷 韩国 (South Korea) 02 - prime
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 03 - prime
   type: ss
   server: 141.164.45.187
-  port: 8091
+  port: 8888
   cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
+  password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 04 - prime
+- name: 🇰🇷 韩国 (South Korea) 03 - prime
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -38,6 +28,13 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - prime
+  type: ss
+  server: 141.164.45.187
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
 - name: 🇰🇷 韩国 (South Korea) 05 - prime
   type: ss
   server: 141.164.45.187
@@ -45,6 +42,45 @@ proxies:
   cipher: aes-256-gcm
   password: TEzjfAYq2IjtuoS
   udp: true
+- name: 🇰🇷 韩国 (South Korea) 06 - prime
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 07 - prime
+  type: ss
+  server: 141.164.45.187
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 08 - prime
+  type: ss
+  server: 141.164.45.187
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 09 - prime
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +91,10 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03 - prime
   - 🇰🇷 韩国 (South Korea) 04 - prime
   - 🇰🇷 韩国 (South Korea) 05 - prime
+  - 🇰🇷 韩国 (South Korea) 06 - prime
+  - 🇰🇷 韩国 (South Korea) 07 - prime
+  - 🇰🇷 韩国 (South Korea) 08 - prime
+  - 🇰🇷 韩国 (South Korea) 09 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -65,5 +105,9 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03 - prime
   - 🇰🇷 韩国 (South Korea) 04 - prime
   - 🇰🇷 韩国 (South Korea) 05 - prime
+  - 🇰🇷 韩国 (South Korea) 06 - prime
+  - 🇰🇷 韩国 (South Korea) 07 - prime
+  - 🇰🇷 韩国 (South Korea) 08 - prime
+  - 🇰🇷 韩国 (South Korea) 09 - prime
 rules:
 - MATCH,PROXIES
