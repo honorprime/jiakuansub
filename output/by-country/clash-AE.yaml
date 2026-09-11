@@ -20,12 +20,57 @@ proxies:
       Host: web-socket.tgdaosheng.ggff.net
 - name: 🇦🇪 阿联酋 (UAE) 02 - prime
   type: vless
-  server: 212.192.3.226
+  server: 104.17.147.22
   port: 443
-  uuid: ffff2157-756a-4658-9716-610395150607
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000005
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: relay.lunetcloud.ir
+  network: ws
+  ws-opts:
+    path: /lunetnetwork
+    headers:
+      Host: relay.lunetcloud.ir
+- name: 🇦🇪 阿联酋 (UAE) 03 - prime
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - prime
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - prime
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +78,9 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - prime
   - 🇦🇪 阿联酋 (UAE) 02 - prime
+  - 🇦🇪 阿联酋 (UAE) 03 - prime
+  - 🇦🇪 阿联酋 (UAE) 04 - prime
+  - 🇦🇪 阿联酋 (UAE) 05 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,5 +88,8 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - prime
   - 🇦🇪 阿联酋 (UAE) 02 - prime
+  - 🇦🇪 阿联酋 (UAE) 03 - prime
+  - 🇦🇪 阿联酋 (UAE) 04 - prime
+  - 🇦🇪 阿联酋 (UAE) 05 - prime
 rules:
 - MATCH,PROXIES
