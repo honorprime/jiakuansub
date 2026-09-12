@@ -5,66 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - prime
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - prime
   type: ss
   server: 36.224.152.189
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - prime
-  type: ss
-  server: 36.224.152.189
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-  udp: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - prime
-  type: vless
-  server: 60.248.219.52
-  port: 443
-  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - prime
-  type: vless
-  server: 220.135.105.32
-  port: 2087
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mia4.pages.dev
-  network: ws
-  ws-opts:
-    path: /TG:@MiaChatChannel
-    headers:
-      Host: mia4.pages.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - prime
   type: ss
   server: r3mrcg001287h3p.cybervena.com
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
   udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - prime
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - prime
   type: ss
   server: 36.224.152.189
   port: 50099
   cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
   udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - prime
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - prime
   type: vless
-  server: 60.248.219.78
+  server: 59.125.69.19
   port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  uuid: f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4
   udp: true
   tls: true
   skip-cert-verify: true
@@ -74,7 +49,7 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 08 - prime
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - prime
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -84,27 +59,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 09 - prime
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 10 - prime
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 11 - prime
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - prime
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -126,10 +81,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 05 - prime
   - 🇹🇼 中国台湾 (Taiwan) 06 - prime
   - 🇹🇼 中国台湾 (Taiwan) 07 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 08 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 09 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 10 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 11 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,9 +93,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 05 - prime
   - 🇹🇼 中国台湾 (Taiwan) 06 - prime
   - 🇹🇼 中国台湾 (Taiwan) 07 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 08 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 09 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 10 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 11 - prime
 rules:
 - MATCH,PROXIES
