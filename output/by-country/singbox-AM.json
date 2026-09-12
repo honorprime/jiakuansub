@@ -6,18 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - prime",
-        "🇮🇪 IE 02 - prime",
-        "🇮🇪 IE 03 - prime"
+        "🇦🇲 AM 01 - prime",
+        "🇦🇲 AM 02 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - prime",
-        "🇮🇪 IE 02 - prime",
-        "🇮🇪 IE 03 - prime"
+        "🇦🇲 AM 01 - prime",
+        "🇦🇲 AM 02 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },

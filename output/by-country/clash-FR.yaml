@@ -6,19 +6,41 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - prime
   type: vless
-  server: 172.67.170.140
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  server: 15.236.172.122
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.arcane509.workers.dev
 - name: 🇫🇷 法国 (France) 02 - prime
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 03 - prime
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 04 - prime
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 05 - prime
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 06 - prime
   type: vless
   server: 149.202.58.99
   port: 443
@@ -32,9 +54,9 @@ proxies:
     path: /vws/
     headers:
       Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 03 - prime
+- name: 🇫🇷 法国 (France) 07 - prime
   type: vless
-  server: 45.144.28.39
+  server: usejh2.neobo-tooth.ru
   port: 2096
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
@@ -45,66 +67,7 @@ proxies:
     path: /
     headers:
       Host: usejh2.neobo-tooth.ru
-- name: 🇫🇷 法国 (France) 04 - prime
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 05 - prime
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 06 - prime
-  type: vless
-  server: 51.38.82.1
-  port: 443
-  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 07 - prime
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇫🇷 法国 (France) 08 - prime
-  type: vless
-  server: 15.237.145.224
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 09 - prime
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇫🇷 法国 (France) 10 - prime
   type: vless
   server: 45.144.28.39
   port: 2096
@@ -117,33 +80,51 @@ proxies:
     path: /
     headers:
       Host: 45.144.28.39
-- name: 🇫🇷 法国 (France) 11 - prime
+- name: 🇫🇷 法国 (France) 09 - prime
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 50414e45-4c5f-5a45-5553-4d64f1370eeb
+  server: 45.144.28.39
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/4d64f1370eeb/loc-0
+    path: /
     headers:
-      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
-- name: 🇫🇷 法国 (France) 12 - prime
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+      Host: usejh2.neobo-tooth.ru
+- name: 🇫🇷 法国 (France) 10 - prime
+  type: vless
+  server: 15.237.145.224
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 11 - prime
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 12 - prime
+  type: ss
+  server: 171.22.128.72
+  port: 2
+  cipher: chacha20-ietf-poly1305
+  password: hcPtVDnxZHumuyqGtiOGtA
+  udp: true
 - name: 🇫🇷 法国 (France) 13 - prime
   type: vmess
-  server: 141.95.65.9
+  server: 162.19.204.71
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -153,42 +134,32 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇫🇷 法国 (France) 14 - prime
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
+  type: vless
+  server: OV-France1.09vpn.com
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-France1.09vpn.com
 - name: 🇫🇷 法国 (France) 15 - prime
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 45.144.28.39
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 45.144.28.39
 - name: 🇫🇷 法国 (France) 16 - prime
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇫🇷 法国 (France) 17 - prime
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 18 - prime
   type: vless
   server: 149.202.58.99
   port: 443
@@ -202,19 +173,19 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 19 - prime
+- name: 🇫🇷 法国 (France) 17 - prime
   type: vless
-  server: 188.114.97.6
+  server: 172.64.229.170
   port: 8080
-  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
+    path: /?ed=2560security=tls
     headers:
-      Host: elenaaaaaaaaaa.cloudns.pro
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -237,8 +208,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 15 - prime
   - 🇫🇷 法国 (France) 16 - prime
   - 🇫🇷 法国 (France) 17 - prime
-  - 🇫🇷 法国 (France) 18 - prime
-  - 🇫🇷 法国 (France) 19 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -261,7 +230,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 15 - prime
   - 🇫🇷 法国 (France) 16 - prime
   - 🇫🇷 法国 (France) 17 - prime
-  - 🇫🇷 法国 (France) 18 - prime
-  - 🇫🇷 法国 (France) 19 - prime
 rules:
 - MATCH,PROXIES

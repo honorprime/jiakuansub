@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD 01 - prime"
+        "🇫🇮 FI 01 - prime",
+        "🇫🇮 FI 02 - prime",
+        "🇫🇮 FI 03 - prime",
+        "🇫🇮 FI 04 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD 01 - prime"
+        "🇫🇮 FI 01 - prime",
+        "🇫🇮 FI 02 - prime",
+        "🇫🇮 FI 03 - prime",
+        "🇫🇮 FI 04 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
