@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇺🇿 UZ 01 - prime",
-        "🇺🇿 UZ 02 - prime"
+        "🇺🇿 UZ 02 - prime",
+        "🇺🇿 UZ 03 - prime",
+        "🇺🇿 UZ 04 - prime"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇿 UZ 01 - prime",
-        "🇺🇿 UZ 02 - prime"
+        "🇺🇿 UZ 02 - prime",
+        "🇺🇿 UZ 03 - prime",
+        "🇺🇿 UZ 04 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
