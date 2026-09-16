@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 BE 01 - prime
+- name: 🇮🇶 IQ 01 - prime
   type: vless
-  server: 141.227.137.177
-  port: 2053
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  server: 104.21.96.1
+  port: 443
+  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: kkkk-xcd.pages.dev
+  servername: D2127A49-Flat-WOoD-c4b5.Milia-AKbaRpOor.workers.Dev
   network: ws
   ws-opts:
-    path: /?ed=2048
+    path: /
     headers:
-      Host: kkkk-xcd.pages.dev
+      Host: D2127A49-Flat-WOoD-c4b5.Milia-AKbaRpOor.workers.Dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 BE 01 - prime
+  - 🇮🇶 IQ 01 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 BE 01 - prime
+  - 🇮🇶 IQ 01 - prime
 rules:
 - MATCH,PROXIES
