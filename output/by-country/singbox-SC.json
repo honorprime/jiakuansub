@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - prime"
+        "🇸🇨 SC 01 - prime",
+        "🇸🇨 SC 02 - prime",
+        "🇸🇨 SC 03 - prime",
+        "🇸🇨 SC 04 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - prime"
+        "🇸🇨 SC 01 - prime",
+        "🇸🇨 SC 02 - prime",
+        "🇸🇨 SC 03 - prime",
+        "🇸🇨 SC 04 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
