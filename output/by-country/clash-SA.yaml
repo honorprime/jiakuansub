@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇦 SA 01 - prime
   type: vless
-  server: 91.209.253.229
+  server: 91.209.253.250
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -15,164 +15,10 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 02 - prime
-  type: vless
-  server: 91.209.253.68
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 03 - prime
-  type: vless
-  server: 91.209.253.42
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 04 - prime
-  type: vless
-  server: 91.209.253.244
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 05 - prime
-  type: vless
-  server: 91.209.253.243
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 06 - prime
-  type: vless
-  server: 91.209.253.119
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 07 - prime
-  type: vless
-  server: 91.209.253.109
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 08 - prime
-  type: vless
-  server: 91.209.253.216
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 09 - prime
-  type: vless
-  server: 91.209.253.109
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 10 - prime
-  type: vless
-  server: 91.209.253.25
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 11 - prime
-  type: vless
-  server: 91.209.253.244
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 12 - prime
-  type: vless
-  server: 91.209.253.42
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 13 - prime
   type: vless
   server: 91.209.253.250
   port: 443
@@ -186,23 +32,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 14 - prime
+- name: 🇸🇦 SA 03 - prime
   type: vless
-  server: 91.209.253.216
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 15 - prime
-  type: vless
-  server: 91.209.253.244
+  server: 91.209.253.68
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -222,18 +54,6 @@ proxy-groups:
   - 🇸🇦 SA 01 - prime
   - 🇸🇦 SA 02 - prime
   - 🇸🇦 SA 03 - prime
-  - 🇸🇦 SA 04 - prime
-  - 🇸🇦 SA 05 - prime
-  - 🇸🇦 SA 06 - prime
-  - 🇸🇦 SA 07 - prime
-  - 🇸🇦 SA 08 - prime
-  - 🇸🇦 SA 09 - prime
-  - 🇸🇦 SA 10 - prime
-  - 🇸🇦 SA 11 - prime
-  - 🇸🇦 SA 12 - prime
-  - 🇸🇦 SA 13 - prime
-  - 🇸🇦 SA 14 - prime
-  - 🇸🇦 SA 15 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -242,17 +62,5 @@ proxy-groups:
   - 🇸🇦 SA 01 - prime
   - 🇸🇦 SA 02 - prime
   - 🇸🇦 SA 03 - prime
-  - 🇸🇦 SA 04 - prime
-  - 🇸🇦 SA 05 - prime
-  - 🇸🇦 SA 06 - prime
-  - 🇸🇦 SA 07 - prime
-  - 🇸🇦 SA 08 - prime
-  - 🇸🇦 SA 09 - prime
-  - 🇸🇦 SA 10 - prime
-  - 🇸🇦 SA 11 - prime
-  - 🇸🇦 SA 12 - prime
-  - 🇸🇦 SA 13 - prime
-  - 🇸🇦 SA 14 - prime
-  - 🇸🇦 SA 15 - prime
 rules:
 - MATCH,PROXIES
