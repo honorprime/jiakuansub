@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇹🇭 TH 01 - prime",
+        "🇹🇭 TH 02 - prime",
+        "🇹🇭 TH 03 - prime",
+        "🇹🇭 TH 04 - prime"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇹🇭 TH 01 - prime",
+        "🇹🇭 TH 02 - prime",
+        "🇹🇭 TH 03 - prime",
+        "🇹🇭 TH 04 - prime"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
