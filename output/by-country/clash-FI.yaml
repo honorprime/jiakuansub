@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - prime
   type: vless
-  server: 212.104.128.68
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 02 - prime
-  type: vless
   server: 212.104.128.152
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
@@ -32,30 +18,9 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 03 - prime
+- name: 🇫🇮 FI 02 - prime
   type: vless
-  server: 104.16.150.246
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇫🇮 FI 04 - prime
-  type: ss
-  server: 82.47.186.18
-  port: 19290
-  cipher: aes-128-gcm
-  password: o2rw2hICwu1blrr_gZAl2Q
-  udp: true
-- name: 🇫🇮 FI 05 - prime
-  type: vless
-  server: 212.104.128.106
+  server: 212.104.128.68
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -64,10 +29,24 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 06 - prime
+- name: 🇫🇮 FI 03 - prime
+  type: vless
+  server: 212.104.128.27
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 04 - prime
   type: vless
   server: 212.104.128.27
   port: 443
@@ -81,9 +60,51 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 07 - prime
+- name: 🇫🇮 FI 05 - prime
   type: vless
-  server: 212.104.128.139
+  server: 104.16.150.246
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇫🇮 FI 06 - prime
+  type: vless
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: 9503e890-3702-4847-af0a-2bceac2f0da0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 07 - prime
+  type: ss
+  server: 82.47.186.18
+  port: 19290
+  cipher: aes-128-gcm
+  password: o2rw2hICwu1blrr_gZAl2Q
+  udp: true
+- name: 🇫🇮 FI 08 - prime
+  type: ss
+  server: 82.47.186.18
+  port: 19290
+  cipher: aes-128-gcm
+  password: o2rw2hICwu1blrr_gZAl2Q
+  udp: true
+- name: 🇫🇮 FI 09 - prime
+  type: vless
+  server: 212.104.128.217
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -93,6 +114,34 @@ proxies:
   network: ws
   ws-opts:
     path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 10 - prime
+  type: vless
+  server: 104.16.150.108
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇫🇮 FI 11 - prime
+  type: vless
+  server: 212.104.128.106
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
     headers:
       Host: xi.tbv.ccwu.cc
 proxy-groups:
@@ -107,6 +156,10 @@ proxy-groups:
   - 🇫🇮 FI 05 - prime
   - 🇫🇮 FI 06 - prime
   - 🇫🇮 FI 07 - prime
+  - 🇫🇮 FI 08 - prime
+  - 🇫🇮 FI 09 - prime
+  - 🇫🇮 FI 10 - prime
+  - 🇫🇮 FI 11 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -119,5 +172,9 @@ proxy-groups:
   - 🇫🇮 FI 05 - prime
   - 🇫🇮 FI 06 - prime
   - 🇫🇮 FI 07 - prime
+  - 🇫🇮 FI 08 - prime
+  - 🇫🇮 FI 09 - prime
+  - 🇫🇮 FI 10 - prime
+  - 🇫🇮 FI 11 - prime
 rules:
 - MATCH,PROXIES

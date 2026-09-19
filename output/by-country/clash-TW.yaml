@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - prime
-  type: vless
-  server: 130.211.240.128
-  port: 443
-  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - prime
   type: vmess
   server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
@@ -29,58 +17,26 @@ proxies:
   servername: ''
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - prime
+  type: vmess
+  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - prime
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - prime
-  type: vless
-  server: 130.211.240.128
-  port: 443
-  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - prime
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - prime
-  type: vless
-  server: 130.211.240.128
-  port: 443
-  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - prime
   type: vmess
   server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
   port: 443
@@ -96,29 +52,23 @@ proxies:
     path: ''
     headers:
       Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 08 - prime
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - prime
   type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 09 - prime
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 10 - prime
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - prime
   type: vmess
   server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
@@ -134,23 +84,21 @@ proxies:
     path: /
     headers:
       Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
-- name: 🇹🇼 中国台湾 (Taiwan) 11 - prime
-  type: vmess
-  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - prime
+  type: vless
+  server: 60.248.219.52
   port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
+  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: ty986gfazs.cainiaohub.xyz
   network: ws
   ws-opts:
-    path: ''
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 12 - prime
+      Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - prime
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -160,7 +108,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 13 - prime
+- name: 🇹🇼 中国台湾 (Taiwan) 08 - prime
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -170,7 +118,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 14 - prime
+- name: 🇹🇼 中国台湾 (Taiwan) 09 - prime
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -180,7 +128,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 15 - prime
+- name: 🇹🇼 中国台湾 (Taiwan) 10 - prime
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -205,11 +153,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 08 - prime
   - 🇹🇼 中国台湾 (Taiwan) 09 - prime
   - 🇹🇼 中国台湾 (Taiwan) 10 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 11 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 12 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 13 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 14 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 15 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -225,10 +168,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 08 - prime
   - 🇹🇼 中国台湾 (Taiwan) 09 - prime
   - 🇹🇼 中国台湾 (Taiwan) 10 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 11 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 12 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 13 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 14 - prime
-  - 🇹🇼 中国台湾 (Taiwan) 15 - prime
 rules:
 - MATCH,PROXIES
