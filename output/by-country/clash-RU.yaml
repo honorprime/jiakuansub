@@ -5,19 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - prime
-  type: ss
-  server: 62.113.41.228
-  port: 2055
-  cipher: chacha20-ietf-poly1305
-  password: 7nzDcoQQxUYU35N5ngbSAg
+  type: vless
+  server: 104.21.8.176
+  port: 443
+  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-1bc8ab.sekiro-c18.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: ez-1bc8ab.sekiro-c18.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 02 - prime
-  type: ss
-  server: 46.17.44.112
-  port: 10301
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
+  type: vless
+  server: 172.67.173.89
+  port: 443
+  uuid: ffa431ab-a59b-4092-a418-905fcb1e4d5f
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/rYScQPG1EEjxXdswdMEU2b3rM4?ed=2560
+    headers:
+      Host: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 03 - prime
   type: vless
   server: 46.8.200.91
@@ -34,18 +48,72 @@ proxies:
       Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 04 - prime
   type: vless
-  server: 89.110.66.154
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: www.baipiao.eu.org
+  port: 8880
+  uuid: 81b3fa7e-12b0-4c2b-9866-324edd26ef7f
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: falling-lake-0b5a.192-3e2.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 05 - prime
+  type: vless
+  server: 172.64.42.85
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: cdn8848.776676.xyz
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 06 - prime
+  type: vless
+  server: 188.114.97.7
+  port: 443
+  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
+  network: ws
+  ws-opts:
+    path: /7J5lLqtBnJg9WjVT?ed
+    headers:
+      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 07 - prime
+  type: vless
+  server: 172.66.47.45
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wk1.f1w.de5.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wk1.f1w.de5.net
+- name: 🇷🇺 俄罗斯 (Russia) 08 - prime
+  type: vless
+  server: 172.64.155.209
+  port: 443
+  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ancient-heart-60c5.dpccgizieb.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +123,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - prime
   - 🇷🇺 俄罗斯 (Russia) 03 - prime
   - 🇷🇺 俄罗斯 (Russia) 04 - prime
+  - 🇷🇺 俄罗斯 (Russia) 05 - prime
+  - 🇷🇺 俄罗斯 (Russia) 06 - prime
+  - 🇷🇺 俄罗斯 (Russia) 07 - prime
+  - 🇷🇺 俄罗斯 (Russia) 08 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,5 +136,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - prime
   - 🇷🇺 俄罗斯 (Russia) 03 - prime
   - 🇷🇺 俄罗斯 (Russia) 04 - prime
+  - 🇷🇺 俄罗斯 (Russia) 05 - prime
+  - 🇷🇺 俄罗斯 (Russia) 06 - prime
+  - 🇷🇺 俄罗斯 (Russia) 07 - prime
+  - 🇷🇺 俄罗斯 (Russia) 08 - prime
 rules:
 - MATCH,PROXIES
