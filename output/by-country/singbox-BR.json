@@ -7,7 +7,10 @@
       "outbounds": [
         "auto",
         "🇧🇷 BR 01 - prime",
-        "🇧🇷 BR 02 - prime"
+        "🇧🇷 BR 02 - prime",
+        "🇧🇷 BR 03 - prime",
+        "🇧🇷 BR 04 - prime",
+        "🇧🇷 BR 05 - prime"
       ]
     },
     {
@@ -15,7 +18,10 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇷 BR 01 - prime",
-        "🇧🇷 BR 02 - prime"
+        "🇧🇷 BR 02 - prime",
+        "🇧🇷 BR 03 - prime",
+        "🇧🇷 BR 04 - prime",
+        "🇧🇷 BR 05 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
