@@ -15,12 +15,12 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇰🇿 KZ 02 - prime
   type: vless
-  server: 31.43.179.36
+  server: 31.43.179.200
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -29,7 +29,7 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇰🇿 KZ 03 - prime
@@ -48,6 +48,20 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇰🇿 KZ 04 - prime
   type: vless
+  server: 31.43.179.109
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 05 - prime
+  type: vless
   server: 31.43.179.25
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
@@ -57,26 +71,12 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 05 - prime
-  type: vless
-  server: kz3.zuoai.cf
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇰🇿 KZ 06 - prime
   type: vless
-  server: 31.43.179.20
+  server: 31.43.179.106
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -90,7 +90,91 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇰🇿 KZ 07 - prime
   type: vless
+  server: 31.43.179.170
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 08 - prime
+  type: vless
   server: 31.43.179.87
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 09 - prime
+  type: vless
+  server: 31.43.179.36
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 10 - prime
+  type: vless
+  server: 31.43.179.8
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 11 - prime
+  type: vless
+  server: 31.43.179.137
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 12 - prime
+  type: vless
+  server: 31.43.179.200
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 13 - prime
+  type: vless
+  server: 31.43.179.20
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -114,6 +198,12 @@ proxy-groups:
   - 🇰🇿 KZ 05 - prime
   - 🇰🇿 KZ 06 - prime
   - 🇰🇿 KZ 07 - prime
+  - 🇰🇿 KZ 08 - prime
+  - 🇰🇿 KZ 09 - prime
+  - 🇰🇿 KZ 10 - prime
+  - 🇰🇿 KZ 11 - prime
+  - 🇰🇿 KZ 12 - prime
+  - 🇰🇿 KZ 13 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -126,5 +216,11 @@ proxy-groups:
   - 🇰🇿 KZ 05 - prime
   - 🇰🇿 KZ 06 - prime
   - 🇰🇿 KZ 07 - prime
+  - 🇰🇿 KZ 08 - prime
+  - 🇰🇿 KZ 09 - prime
+  - 🇰🇿 KZ 10 - prime
+  - 🇰🇿 KZ 11 - prime
+  - 🇰🇿 KZ 12 - prime
+  - 🇰🇿 KZ 13 - prime
 rules:
 - MATCH,PROXIES
