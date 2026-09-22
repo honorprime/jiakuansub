@@ -6,6 +6,45 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - prime
   type: vless
+  server: 104.18.46.234
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 02 - prime
+  type: vless
+  server: 172.64.229.2
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - prime
+  type: vless
+  server: 104.16.107.139
+  port: 8880
+  uuid: 24c2a873-4584-4c53-8679-61029682d0bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: soft-thunder-bc22.111-f59.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 04 - prime
+  type: vless
   server: 46.8.200.91
   port: 443
   uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
@@ -18,20 +57,6 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 02 - prime
-  type: vless
-  server: 194.156.26.45
-  port: 443
-  uuid: 6bef6685-e989-467c-8fea-7fa1c6a0af2c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: LZc2j8i5PteXj5I7Aq0hFxQadvZcq.wF99sAF201Sfs9.wOrKers.dev
-  network: ws
-  ws-opts:
-    path: /vl/BBj8crirrHMxntD7H3o3z
-    headers:
-      Host: LZc2j8i5PteXj5I7Aq0hFxQadvZcq.wF99sAF201Sfs9.wOrKers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +64,8 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - prime
   - 🇷🇺 俄罗斯 (Russia) 02 - prime
+  - 🇷🇺 俄罗斯 (Russia) 03 - prime
+  - 🇷🇺 俄罗斯 (Russia) 04 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +73,7 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - prime
   - 🇷🇺 俄罗斯 (Russia) 02 - prime
+  - 🇷🇺 俄罗斯 (Russia) 03 - prime
+  - 🇷🇺 俄罗斯 (Russia) 04 - prime
 rules:
 - MATCH,PROXIES
