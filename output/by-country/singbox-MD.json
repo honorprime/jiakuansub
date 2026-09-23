@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD 01 - prime",
-        "🇲🇩 MD 02 - prime",
-        "🇲🇩 MD 03 - prime",
-        "🇲🇩 MD 04 - prime"
+        "🇲🇩 MD 01 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD 01 - prime",
-        "🇲🇩 MD 02 - prime",
-        "🇲🇩 MD 03 - prime",
-        "🇲🇩 MD 04 - prime"
+        "🇲🇩 MD 01 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
