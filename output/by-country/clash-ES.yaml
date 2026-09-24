@@ -5,46 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - prime
-  type: vless
-  server: chat.openai.com
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime29.workers.dev
-- name: 🇪🇸 西班牙 (Spain) 02 - prime
   type: ss
   server: 140.174.184.5
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 03 - prime
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 04 - prime
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 05 - prime
+- name: 🇪🇸 西班牙 (Spain) 02 - prime
   type: vless
   server: 196.245.52.147
   port: 25535
@@ -56,13 +23,6 @@ proxies:
     public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
   servername: www.microsoft.com
   client-fingerprint: qq
-- name: 🇪🇸 西班牙 (Spain) 06 - prime
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,10 +30,6 @@ proxy-groups:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - prime
   - 🇪🇸 西班牙 (Spain) 02 - prime
-  - 🇪🇸 西班牙 (Spain) 03 - prime
-  - 🇪🇸 西班牙 (Spain) 04 - prime
-  - 🇪🇸 西班牙 (Spain) 05 - prime
-  - 🇪🇸 西班牙 (Spain) 06 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,9 +37,5 @@ proxy-groups:
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - prime
   - 🇪🇸 西班牙 (Spain) 02 - prime
-  - 🇪🇸 西班牙 (Spain) 03 - prime
-  - 🇪🇸 西班牙 (Spain) 04 - prime
-  - 🇪🇸 西班牙 (Spain) 05 - prime
-  - 🇪🇸 西班牙 (Spain) 06 - prime
 rules:
 - MATCH,PROXIES
