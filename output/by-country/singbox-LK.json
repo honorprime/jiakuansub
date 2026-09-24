@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - prime"
+        "🇱🇰 LK 01 - prime",
+        "🇱🇰 LK 02 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - prime"
+        "🇱🇰 LK 01 - prime",
+        "🇱🇰 LK 02 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },

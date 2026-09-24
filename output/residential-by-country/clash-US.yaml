@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 LT 01 - prime
+- name: 🇺🇸 美国 (United States) 01 (家宽) - prime
   type: vless
-  server: 88.216.69.144
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-4d64f1370eeb
+  server: 162.159.38.127
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/4d64f1370eeb/loc-0
+    path: /?ed=2560security=tls
     headers:
-      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 LT 01 - prime
+  - 🇺🇸 美国 (United States) 01 (家宽) - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 LT 01 - prime
+  - 🇺🇸 美国 (United States) 01 (家宽) - prime
 rules:
 - MATCH,PROXIES
