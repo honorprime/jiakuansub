@@ -29,21 +29,13 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 03 - prime
-  type: vmess
-  server: mygptagent.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 31.56.222.61
+  port: 45286
+  uuid: 79251d3c-aabc-475c-b598-67263479b382
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
 - name: 🇪🇸 西班牙 (Spain) 04 - prime
   type: vmess
   server: 66.163.118.73
@@ -55,13 +47,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 05 - prime
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 06 - prime
   type: vmess
   server: 66.163.118.73
   port: 22324
@@ -71,13 +56,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 07 - prime
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,8 +66,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03 - prime
   - 🇪🇸 西班牙 (Spain) 04 - prime
   - 🇪🇸 西班牙 (Spain) 05 - prime
-  - 🇪🇸 西班牙 (Spain) 06 - prime
-  - 🇪🇸 西班牙 (Spain) 07 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -100,7 +76,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03 - prime
   - 🇪🇸 西班牙 (Spain) 04 - prime
   - 🇪🇸 西班牙 (Spain) 05 - prime
-  - 🇪🇸 西班牙 (Spain) 06 - prime
-  - 🇪🇸 西班牙 (Spain) 07 - prime
 rules:
 - MATCH,PROXIES
