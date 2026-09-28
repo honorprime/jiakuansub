@@ -13,7 +13,7 @@ proxies:
   udp: true
 - name: 🇵🇱 PL 02 - prime
   type: vless
-  server: 104.25.146.77
+  server: 104.17.247.68
   port: 443
   uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
@@ -41,7 +41,7 @@ proxies:
       Host: khoda.ak-khoda.workers.dev
 - name: 🇵🇱 PL 04 - prime
   type: vless
-  server: 104.17.247.68
+  server: 104.25.146.77
   port: 443
   uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
@@ -53,19 +53,6 @@ proxies:
     path: /sync
     headers:
       Host: khoda.ak-khoda.workers.dev
-- name: 🇵🇱 PL 05 - prime
-  type: vless
-  server: 64.176.77.202
-  port: 80
-  uuid: 2a12a637-2724-4789-a64d-64ebc1b9bbf3
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 64.176.77.202
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,7 +62,6 @@ proxy-groups:
   - 🇵🇱 PL 02 - prime
   - 🇵🇱 PL 03 - prime
   - 🇵🇱 PL 04 - prime
-  - 🇵🇱 PL 05 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -85,6 +71,5 @@ proxy-groups:
   - 🇵🇱 PL 02 - prime
   - 🇵🇱 PL 03 - prime
   - 🇵🇱 PL 04 - prime
-  - 🇵🇱 PL 05 - prime
 rules:
 - MATCH,PROXIES
