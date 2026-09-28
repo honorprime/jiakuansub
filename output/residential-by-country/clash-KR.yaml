@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - prime
   type: vless
-  server: 103.177.249.40
-  port: 2083
+  server: 38.180.225.247
+  port: 2053
   uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
   udp: true
   tls: true
