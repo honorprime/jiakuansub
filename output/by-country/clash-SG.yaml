@@ -5,166 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - prime
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 02 - prime
-  type: vless
-  server: 91.193.58.45
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 03 - prime
-  type: vless
-  server: 54.169.72.60
-  port: 8686
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 04 - prime
-  type: vless
-  server: 172.66.140.62
-  port: 8880
-  uuid: 160ca353-676d-4b7f-a041-0289e388b865
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proud-cloud-7bdd.208-a52.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 05 - prime
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 06 - prime
-  type: vless
-  server: 104.19.164.155
-  port: 2083
-  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 07 - prime
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 08 - prime
-  type: vless
-  server: free-server.techsonic.dev
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 09 - prime
-  type: vless
-  server: 132.243.238.192
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 10 - prime
-  type: vless
-  server: 172.66.214.247
-  port: 8880
-  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: sweet-sun-c70f.317-ba5.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 11 - prime
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 12 - prime
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 13 - prime
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 14 - prime
   type: vless
   server: onhit.shalana.xyz
   port: 443
@@ -173,7 +13,45 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: onhit.shalana.xyz
-- name: 🇸🇬 新加坡 (Singapore) 15 - prime
+- name: 🇸🇬 新加坡 (Singapore) 02 - prime
+  type: vless
+  server: 170.114.52.22
+  port: 443
+  uuid: 38415950-f815-4ca8-94d0-6cbf22be7566
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmasterofficial.store
+  network: ws
+  ws-opts:
+    path: /cs
+    headers:
+      Host: asia.csmasterofficial.store
+- name: 🇸🇬 新加坡 (Singapore) 03 - prime
+  type: vless
+  server: free-server.techsonic.dev
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 04 - prime
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 05 - prime
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -185,35 +63,9 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 16 - prime
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 17 - prime
-  type: vless
-  server: 116.204.164.27
-  port: 7443
-  uuid: 3e438472-0f1e-4bbf-be5a-67d034afd8c0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 18 - prime
+- name: 🇸🇬 新加坡 (Singapore) 06 - prime
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -221,35 +73,33 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 19 - prime
+- name: 🇸🇬 新加坡 (Singapore) 07 - prime
   type: vless
-  server: 172.237.89.202
+  server: 141.11.90.160
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇸🇬 新加坡 (Singapore) 08 - prime
+  type: vless
+  server: onhit.shalana.xyz
   port: 443
   uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
   udp: true
   tls: true
   skip-cert-verify: true
   servername: onhit.shalana.xyz
-- name: 🇸🇬 新加坡 (Singapore) 20 - prime
-  type: ss
-  server: 168.107.84.41
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: s9CVCQlH8SB/LXByDobKTOMdTjJ7WScGfA57wZhHbek=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 21 - prime
+- name: 🇸🇬 新加坡 (Singapore) 09 - prime
   type: vless
-  server: free-server.techsonic.dev
+  server: 43.174.195.1
   port: 443
-  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aka.ms
-- name: 🇸🇬 新加坡 (Singapore) 22 - prime
-  type: vless
-  server: 23.141.12.134
-  port: 8443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
@@ -260,31 +110,7 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 23 - prime
-  type: vless
-  server: 66.81.247.155
-  port: 2083
-  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: testmikonim.hydrymhmdamyn7.workers.dev
-  network: ws
-  ws-opts:
-    path: /OAZko425kNFF0PpQ
-    headers:
-      Host: testmikonim.hydrymhmdamyn7.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 24 - prime
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 25 - prime
+- name: 🇸🇬 新加坡 (Singapore) 10 - prime
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -296,7 +122,118 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 26 - prime
+- name: 🇸🇬 新加坡 (Singapore) 11 - prime
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 12 - prime
+  type: ss
+  server: 161.118.219.5
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9PfRlIGvpMs8nD7s65B/3IxccQG+p631X9tCLZy+CRI=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 13 - prime
+  type: vless
+  server: 141.11.90.160
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /+
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇸🇬 新加坡 (Singapore) 14 - prime
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 15 - prime
+  type: vless
+  server: onhit.shalana.xyz
+  port: 443
+  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: onhit.shalana.xyz
+- name: 🇸🇬 新加坡 (Singapore) 16 - prime
+  type: vless
+  server: free-server.techsonic.dev
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 17 - prime
+  type: ss
+  server: 168.107.84.41
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: s9CVCQlH8SB/LXByDobKTOMdTjJ7WScGfA57wZhHbek=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 18 - prime
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 19 - prime
+  type: vless
+  server: 170.114.52.22
+  port: 443
+  uuid: 38415950-f815-4ca8-94d0-6cbf22be7566
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmasterofficial.store
+  network: ws
+  ws-opts:
+    path: /cs
+    headers:
+      Host: asia.csmasterofficial.store
+- name: 🇸🇬 新加坡 (Singapore) 20 - prime
+  type: vless
+  server: 141.11.90.160
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇸🇬 新加坡 (Singapore) 21 - prime
   type: vless
   server: 27.50.49.154
   port: 2083
@@ -310,11 +247,43 @@ proxies:
     path: /
     headers:
       Host: proxy-34l.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 27 - prime
+- name: 🇸🇬 新加坡 (Singapore) 22 - prime
   type: vless
-  server: 172.66.140.62
-  port: 8880
-  uuid: 160ca353-676d-4b7f-a041-0289e388b865
+  server: free-server.techsonic.dev
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 23 - prime
+  type: vless
+  server: 47.237.74.17
+  port: 16263
+  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 24 - prime
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 25 - prime
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 56eba3f8-94f8-48f2-920b-d79bb042d0bb
   udp: true
   tls: false
   skip-cert-verify: true
@@ -322,8 +291,67 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: proud-cloud-7bdd.208-a52.workers.dev
+      Host: lingering-glade-21ce.61-b6f.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 26 - prime
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 27 - prime
+  type: ss
+  server: 168.107.78.228
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: bkirkeLNxhjqSpiH40KS1FGcpKSwnAEWm8+DN3QLPoU=
+  udp: true
 - name: 🇸🇬 新加坡 (Singapore) 28 - prime
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 29 - prime
+  type: vless
+  server: 143.198.213.40
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /+
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇸🇬 新加坡 (Singapore) 30 - prime
+  type: vless
+  server: 104.21.31.137
+  port: 443
+  uuid: 59c70620-d2f3-4255-9d6f-f4c5103d64ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 59fssIBE-SDDrRs3qW83QQZz0H1NT-o.q7qwsxItB6BYi5nMTa4naAlz.woRkErs.deV
+  network: ws
+  ws-opts:
+    path: /vl/FpYFoMlg8sRpgV7SSaOaRYa3fagqGu?ed
+    headers:
+      Host: 59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 31 - prime
   type: vless
   server: 141.11.90.160
   port: 443
@@ -337,48 +365,19 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 29 - prime
-  type: vless
-  server: 170.114.52.22
-  port: 443
-  uuid: 38415950-f815-4ca8-94d0-6cbf22be7566
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmasterofficial.store
-  network: ws
-  ws-opts:
-    path: /cs
-    headers:
-      Host: asia.csmasterofficial.store
-- name: 🇸🇬 新加坡 (Singapore) 30 - prime
-  type: vless
-  server: 104.21.64.250
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 31 - prime
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 2388e166-3890-33ae-f77e-efac00000002
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 32 - prime
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 33 - prime
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -388,41 +387,70 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 33 - prime
+- name: 🇸🇬 新加坡 (Singapore) 34 - prime
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 35 - prime
   type: vless
-  server: 162.159.156.214
+  server: 172.66.140.62
   port: 8880
-  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
+  uuid: 160ca353-676d-4b7f-a041-0289e388b865
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /
     headers:
-      Host: soft-band-8da6.426.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 34 - prime
-  type: ss
-  server: 213.35.124.191
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: f3lz1aPywEuTpS4I3mmarFU+LDABF1eDBRHJ2zNgiRM=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 35 - prime
+      Host: proud-cloud-7bdd.208-a52.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 36 - prime
   type: vless
-  server: 156.224.76.205
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vp10.pages.dev
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 37 - prime
+  type: vless
+  server: 23.175.201.2
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: vp10.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 36 - prime
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇸🇬 新加坡 (Singapore) 38 - prime
+  type: vless
+  server: 172.67.215.39
+  port: 443
+  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 39 - prime
   type: vless
   server: 104.17.70.206
   port: 2096
@@ -436,21 +464,7 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 37 - prime
-  type: vless
-  server: 141.11.90.160
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 38 - prime
+- name: 🇸🇬 新加坡 (Singapore) 40 - prime
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -462,14 +476,15 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 39 - prime
-  type: ss
-  server: 168.107.78.228
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: bkirkeLNxhjqSpiH40KS1FGcpKSwnAEWm8+DN3QLPoU=
+- name: 🇸🇬 新加坡 (Singapore) 41 - prime
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
   udp: true
-- name: 🇸🇬 新加坡 (Singapore) 40 - prime
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 42 - prime
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -479,44 +494,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 41 - prime
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 42 - prime
-  type: vless
-  server: onhit.shalana.xyz
-  port: 443
-  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: onhit.shalana.xyz
 - name: 🇸🇬 新加坡 (Singapore) 43 - prime
   type: vless
-  server: 132.243.238.192
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 44 - prime
-  type: vless
-  server: 91.193.58.118
+  server: free-server.techsonic.dev
   port: 2096
   uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   udp: true
@@ -528,158 +508,7 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 45 - prime
-  type: ss
-  server: 13.229.204.74
-  port: 8443
-  cipher: chacha20-ietf-poly1305
-  password: 2db985f6-21bf-40c2-a4f1-4ce2cf90b1c2
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 46 - prime
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 47 - prime
-  type: vless
-  server: 170.114.52.22
-  port: 443
-  uuid: 38415950-f815-4ca8-94d0-6cbf22be7566
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmasterofficial.store
-  network: ws
-  ws-opts:
-    path: /cs
-    headers:
-      Host: asia.csmasterofficial.store
-- name: 🇸🇬 新加坡 (Singapore) 48 - prime
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 49 - prime
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 50 - prime
-  type: vless
-  server: 43.174.195.1
-  port: 443
-  uuid: 24916ad0-847d-4522-9e17-f4347dee57fd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kv.074167.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kv.074167.xyz
-- name: 🇸🇬 新加坡 (Singapore) 51 - prime
-  type: vless
-  server: onhit.shalana.xyz
-  port: 443
-  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: onhit.shalana.xyz
-- name: 🇸🇬 新加坡 (Singapore) 52 - prime
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 53 - prime
-  type: vless
-  server: onhit.shalana.xyz
-  port: 443
-  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: onhit.shalana.xyz
-- name: 🇸🇬 新加坡 (Singapore) 54 - prime
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 55 - prime
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 56 - prime
-  type: ss
-  server: 138.2.84.129
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: OD1p/OGuWN9AneAVzkNz0dQtKbZIkOJ9Ji9QTYcGmDY=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 57 - prime
-  type: vless
-  server: 104.17.3.81
-  port: 443
-  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nautica-cff.kloningstrife002.workers.dev
-  network: ws
-  ws-opts:
-    path: /138.2.74.219-28616
-    headers:
-      Host: nautica-cff.kloningstrife002.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 58 - prime
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 59 - prime
+- name: 🇸🇬 新加坡 (Singapore) 44 - prime
   type: vless
   server: 116.251.217.65
   port: 443
@@ -693,6 +522,89 @@ proxies:
     path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
       Host: netlivpn4813.ddhshhshs.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 45 - prime
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 46 - prime
+  type: vless
+  server: 172.66.140.62
+  port: 8880
+  uuid: 160ca353-676d-4b7f-a041-0289e388b865
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proud-cloud-7bdd.208-a52.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 47 - prime
+  type: vless
+  server: 84.22.150.39
+  port: 7443
+  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 48 - prime
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 49 - prime
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 50 - prime
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 51 - prime
+  type: vless
+  server: www.visa.com.sg
+  port: 8880
+  uuid: deee4a60-e8c3-456f-846f-aa2c2b7fae24
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: broad-bush-c2c8.37-9a0.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -749,14 +661,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 49 - prime
   - 🇸🇬 新加坡 (Singapore) 50 - prime
   - 🇸🇬 新加坡 (Singapore) 51 - prime
-  - 🇸🇬 新加坡 (Singapore) 52 - prime
-  - 🇸🇬 新加坡 (Singapore) 53 - prime
-  - 🇸🇬 新加坡 (Singapore) 54 - prime
-  - 🇸🇬 新加坡 (Singapore) 55 - prime
-  - 🇸🇬 新加坡 (Singapore) 56 - prime
-  - 🇸🇬 新加坡 (Singapore) 57 - prime
-  - 🇸🇬 新加坡 (Singapore) 58 - prime
-  - 🇸🇬 新加坡 (Singapore) 59 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -813,13 +717,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 49 - prime
   - 🇸🇬 新加坡 (Singapore) 50 - prime
   - 🇸🇬 新加坡 (Singapore) 51 - prime
-  - 🇸🇬 新加坡 (Singapore) 52 - prime
-  - 🇸🇬 新加坡 (Singapore) 53 - prime
-  - 🇸🇬 新加坡 (Singapore) 54 - prime
-  - 🇸🇬 新加坡 (Singapore) 55 - prime
-  - 🇸🇬 新加坡 (Singapore) 56 - prime
-  - 🇸🇬 新加坡 (Singapore) 57 - prime
-  - 🇸🇬 新加坡 (Singapore) 58 - prime
-  - 🇸🇬 新加坡 (Singapore) 59 - prime
 rules:
 - MATCH,PROXIES
