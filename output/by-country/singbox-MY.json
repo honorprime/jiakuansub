@@ -6,14 +6,36 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - prime"
+        "🇲🇾 MY 01 - prime",
+        "🇲🇾 MY 02 - prime",
+        "🇲🇾 MY 03 - prime",
+        "🇲🇾 MY 04 - prime",
+        "🇲🇾 MY 05 - prime",
+        "🇲🇾 MY 06 - prime",
+        "🇲🇾 MY 07 - prime",
+        "🇲🇾 MY 08 - prime",
+        "🇲🇾 MY 09 - prime",
+        "🇲🇾 MY 10 - prime",
+        "🇲🇾 MY 11 - prime",
+        "🇲🇾 MY 12 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - prime"
+        "🇲🇾 MY 01 - prime",
+        "🇲🇾 MY 02 - prime",
+        "🇲🇾 MY 03 - prime",
+        "🇲🇾 MY 04 - prime",
+        "🇲🇾 MY 05 - prime",
+        "🇲🇾 MY 06 - prime",
+        "🇲🇾 MY 07 - prime",
+        "🇲🇾 MY 08 - prime",
+        "🇲🇾 MY 09 - prime",
+        "🇲🇾 MY 10 - prime",
+        "🇲🇾 MY 11 - prime",
+        "🇲🇾 MY 12 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
