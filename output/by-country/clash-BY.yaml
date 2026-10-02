@@ -6,90 +6,6 @@ log-level: info
 proxies:
 - name: 🇧🇾 BY 01 - prime
   type: vless
-  server: 89.125.96.74
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 02 - prime
-  type: vless
-  server: ddnl0.zazazuza.ru
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 03 - prime
-  type: vless
-  server: 89.125.96.90
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 04 - prime
-  type: vless
-  server: 89.125.96.88
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 05 - prime
-  type: vless
-  server: 89.125.96.89
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 06 - prime
-  type: vless
-  server: 89.125.96.74
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 07 - prime
-  type: vless
   server: 89.125.96.75
   port: 2053
   uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
@@ -108,23 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇾 BY 01 - prime
-  - 🇧🇾 BY 02 - prime
-  - 🇧🇾 BY 03 - prime
-  - 🇧🇾 BY 04 - prime
-  - 🇧🇾 BY 05 - prime
-  - 🇧🇾 BY 06 - prime
-  - 🇧🇾 BY 07 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇾 BY 01 - prime
-  - 🇧🇾 BY 02 - prime
-  - 🇧🇾 BY 03 - prime
-  - 🇧🇾 BY 04 - prime
-  - 🇧🇾 BY 05 - prime
-  - 🇧🇾 BY 06 - prime
-  - 🇧🇾 BY 07 - prime
 rules:
 - MATCH,PROXIES

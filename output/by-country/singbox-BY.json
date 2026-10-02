@@ -6,26 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 BY 01 - prime",
-        "🇧🇾 BY 02 - prime",
-        "🇧🇾 BY 03 - prime",
-        "🇧🇾 BY 04 - prime",
-        "🇧🇾 BY 05 - prime",
-        "🇧🇾 BY 06 - prime",
-        "🇧🇾 BY 07 - prime"
+        "🇧🇾 BY 01 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 BY 01 - prime",
-        "🇧🇾 BY 02 - prime",
-        "🇧🇾 BY 03 - prime",
-        "🇧🇾 BY 04 - prime",
-        "🇧🇾 BY 05 - prime",
-        "🇧🇾 BY 06 - prime",
-        "🇧🇾 BY 07 - prime"
+        "🇧🇾 BY 01 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
