@@ -8,7 +8,8 @@
         "auto",
         "🇮🇪 IE 01 - prime",
         "🇮🇪 IE 02 - prime",
-        "🇮🇪 IE 03 - prime"
+        "🇮🇪 IE 03 - prime",
+        "🇮🇪 IE 04 - prime"
       ]
     },
     {
@@ -17,7 +18,8 @@
       "outbounds": [
         "🇮🇪 IE 01 - prime",
         "🇮🇪 IE 02 - prime",
-        "🇮🇪 IE 03 - prime"
+        "🇮🇪 IE 03 - prime",
+        "🇮🇪 IE 04 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
