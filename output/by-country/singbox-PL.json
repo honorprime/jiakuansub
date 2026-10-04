@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇪 GE 01 - prime",
-        "🇬🇪 GE 02 - prime"
+        "🇵🇱 PL 01 - prime",
+        "🇵🇱 PL 02 - prime",
+        "🇵🇱 PL 03 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇪 GE 01 - prime",
-        "🇬🇪 GE 02 - prime"
+        "🇵🇱 PL 01 - prime",
+        "🇵🇱 PL 02 - prime",
+        "🇵🇱 PL 03 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
