@@ -18,6 +18,13 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
+- name: 🇫🇮 FI 03 - prime
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -25,6 +32,7 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - prime
   - 🇫🇮 FI 02 - prime
+  - 🇫🇮 FI 03 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +40,6 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - prime
   - 🇫🇮 FI 02 - prime
+  - 🇫🇮 FI 03 - prime
 rules:
 - MATCH,PROXIES
