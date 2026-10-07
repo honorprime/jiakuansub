@@ -19,6 +19,19 @@ proxies:
     headers:
       Host: proxy-34l.pages.dev
 - name: 🇸🇨 SC 02 - prime
+  type: vless
+  server: 154.197.64.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime36.workers.dev
+- name: 🇸🇨 SC 03 - prime
   type: ss
   server: 45.207.207.25
   port: 443
@@ -32,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - prime
   - 🇸🇨 SC 02 - prime
+  - 🇸🇨 SC 03 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - prime
   - 🇸🇨 SC 02 - prime
+  - 🇸🇨 SC 03 - prime
 rules:
 - MATCH,PROXIES

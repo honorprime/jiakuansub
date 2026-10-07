@@ -20,7 +20,7 @@ proxies:
       Host: 60.248.219.53
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - prime
   type: vless
-  server: argo6.5671234.xyz
+  server: 45.192.201.140
   port: 443
   uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
   udp: true
