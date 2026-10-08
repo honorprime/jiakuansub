@@ -5,1072 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - prime
-  type: ss
-  server: 15.204.247.206
-  port: 4444
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
+  type: vless
+  server: 69.48.201.136
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: uspanel.unixzone.us
 - name: 🇺🇸 美国 (United States) 02 - prime
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.66.1.43
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
 - name: 🇺🇸 美国 (United States) 03 - prime
-  type: vless
-  server: 104.19.35.67
-  port: 443
-  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: x.m-90.xyz
-  network: ws
-  ws-opts:
-    path: t.me/TEAMNETGRATISCOL
-    headers:
-      Host: x.m-90.xyz
-- name: 🇺🇸 美国 (United States) 04 - prime
-  type: vless
-  server: 198.251.78.29
-  port: 2053
-  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 05 - prime
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 06 - prime
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 07 - prime
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 08 - prime
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 09 - prime
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 10 - prime
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 11 - prime
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 12 - prime
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 13 - prime
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 14 - prime
-  type: vless
-  server: 13.231.221.179
-  port: 443
-  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: x.m-90.xyz
-  network: ws
-  ws-opts:
-    path: t.me/TEAMNETGRATISCOL
-    headers:
-      Host: x.m-90.xyz
-- name: 🇺🇸 美国 (United States) 15 - prime
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 16 - prime
-  type: vless
-  server: 104.17.98.5
-  port: 443
-  uuid: 49ccad64-c854-4f33-b334-793cf0d02b74
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: newcscf.jisucf.cloudns.ch
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newcscf.jisucf.cloudns.ch
-- name: 🇺🇸 美国 (United States) 17 - prime
-  type: vless
-  server: 69.48.201.136
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usserver
-    headers:
-      Host: 69.48.201.136
-- name: 🇺🇸 美国 (United States) 18 - prime
-  type: ss
-  server: 37.19.198.243
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 19 - prime
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 20 - prime
-  type: ss
-  server: 173.244.56.9
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 21 - prime
-  type: vless
-  server: 104.18.0.1
-  port: 443
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: all.speedtest03.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: all.speedtest03.ccwu.cc
-- name: 🇺🇸 美国 (United States) 22 - prime
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 23 - prime
-  type: ss
-  server: 108.181.0.177
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: G5p6ww4o67HB
-  udp: true
-- name: 🇺🇸 美国 (United States) 24 - prime
-  type: vless
-  server: 104.243.33.154
-  port: 45299
-  uuid: 261f011c-e97a-4d72-b596-e6329b50b47b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 25 - prime
-  type: ss
-  server: 156.146.38.169
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 26 - prime
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇺🇸 美国 (United States) 27 - prime
-  type: vless
-  server: 107.173.237.146
-  port: 8443
-  uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 28 - prime
-  type: vless
-  server: 107.173.237.146
-  port: 8443
-  uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc
-  servername: updates.cdn-apple.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 29 - prime
-  type: ss
-  server: 64.74.163.69
-  port: 18766
-  cipher: aes-128-gcm
-  password: 4efe1af272e7292139b889f6a63ee071
-  udp: true
-- name: 🇺🇸 美国 (United States) 30 - prime
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 31 - prime
-  type: ss
-  server: 37.19.198.236
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 32 - prime
-  type: vless
-  server: 104.18.21.69
-  port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: us-lax.862400.xyz
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: us-lax.862400.xyz
-- name: 🇺🇸 美国 (United States) 33 - prime
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 34 - prime
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 35 - prime
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🇺🇸 美国 (United States) 36 - prime
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 37 - prime
-  type: vless
-  server: 104.17.98.5
-  port: 443
-  uuid: 49ccad64-c854-4f33-b334-793cf0d02b74
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: newcscf.jisucf.cloudns.ch
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newcscf.jisucf.cloudns.ch
-- name: 🇺🇸 美国 (United States) 38 - prime
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 39 - prime
-  type: vless
-  server: 104.243.33.154
-  port: 45299
-  uuid: 261f011c-e97a-4d72-b596-e6329b50b47b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 40 - prime
-  type: vless
-  server: 104.243.33.154
-  port: 45299
-  uuid: 261f011c-e97a-4d72-b596-e6329b50b47b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 41 - prime
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 42 - prime
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 43 - prime
-  type: ss
-  server: 37.19.198.244
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 44 - prime
-  type: ss
-  server: 108.181.0.177
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: G5p6ww4o67HB
-  udp: true
-- name: 🇺🇸 美国 (United States) 45 - prime
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 46 - prime
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 47 - prime
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 48 - prime
-  type: vless
-  server: 13.115.139.162
-  port: 443
-  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: x.m-90.xyz
-  network: ws
-  ws-opts:
-    path: t.me/TEAMNETGRATISCOL
-    headers:
-      Host: x.m-90.xyz
-- name: 🇺🇸 美国 (United States) 49 - prime
-  type: vless
-  server: 45.39.230.148
-  port: 2083
-  uuid: d1f68cb6-bfab-4c14-b1c8-f58d047d00e3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jrnkkm.de5.net
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 45.39.230.148
-- name: 🇺🇸 美国 (United States) 50 - prime
-  type: vless
-  server: 107.173.237.146
-  port: 8443
-  uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc
-  servername: updates.cdn-apple.com
-  client-fingerprint: random
-- name: 🇺🇸 美国 (United States) 51 - prime
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 52 - prime
-  type: ss
-  server: 108.181.118.10
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: G5p6ww4o67HB
-  udp: true
-- name: 🇺🇸 美国 (United States) 53 - prime
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
-- name: 🇺🇸 美国 (United States) 54 - prime
-  type: ss
-  server: 66.23.204.214
-  port: 16999
-  cipher: aes-128-gcm
-  password: 89d3a0375a279f6e743fea76e72952a8
-  udp: true
-- name: 🇺🇸 美国 (United States) 55 - prime
-  type: vless
-  server: 69.46.46.70
-  port: 443
-  uuid: b4005425-54ec-47a7-b23b-1cc94ad9eaa7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: win-lin-production.up.railway.app
-  network: ws
-  ws-opts:
-    path: /jx-kert05yzxcijde
-    headers:
-      Host: win-lin-production.up.railway.app
-- name: 🇺🇸 美国 (United States) 56 - prime
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 57 - prime
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 58 - prime
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 59 - prime
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 60 - prime
-  type: ss
-  server: 64.74.163.69
-  port: 18766
-  cipher: aes-128-gcm
-  password: 4efe1af272e7292139b889f6a63ee071
-  udp: true
-- name: 🇺🇸 美国 (United States) 61 - prime
-  type: vless
-  server: 104.17.189.78
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🇺🇸 美国 (United States) 62 - prime
-  type: vless
-  server: uspanel.unixzone.us
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usserver
-    headers:
-      Host: uspanel.unixzone.us
-- name: 🇺🇸 美国 (United States) 63 - prime
-  type: vless
-  server: uspanel.unixzone.us
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usserver
-    headers:
-      Host: uspanel.unixzone.us
-- name: 🇺🇸 美国 (United States) 64 - prime
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 65 - prime
-  type: ss
-  server: 64.74.161.147
-  port: 17200
-  cipher: aes-128-gcm
-  password: 1cbb3e347ee86e1980a7c731e9dd00a0
-  udp: true
-- name: 🇺🇸 美国 (United States) 66 - prime
-  type: ss
-  server: 108.181.57.93
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: RSo52SbxW40r
-  udp: true
-- name: 🇺🇸 美国 (United States) 67 - prime
-  type: ss
-  server: 216.105.168.158
-  port: 11332
-  cipher: aes-128-gcm
-  password: 404243f1f29932014b81216208f96031
-  udp: true
-- name: 🇺🇸 美国 (United States) 68 - prime
-  type: vless
-  server: 172.64.229.14
-  port: 443
-  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: x.m-90.xyz
-  network: ws
-  ws-opts:
-    path: t.me/TEAMNETGRATISCOL
-    headers:
-      Host: x.m-90.xyz
-- name: 🇺🇸 美国 (United States) 69 - prime
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 70 - prime
-  type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇺🇸 美国 (United States) 71 - prime
-  type: ss
-  server: 15.204.233.41
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇺🇸 美国 (United States) 72 - prime
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 73 - prime
-  type: ss
-  server: 15.204.246.132
-  port: 7307
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: 🇺🇸 美国 (United States) 74 - prime
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 75 - prime
-  type: vmess
-  server: 142.171.48.179
-  port: 28167
-  uuid: a0181cb3-fcc5-4a0a-9e71-db943a2309fa
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇺🇸 美国 (United States) 76 - prime
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 77 - prime
-  type: vless
-  server: uspanel.unixzone.us
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usserver
-    headers:
-      Host: uspanel.unixzone.us
-- name: 🇺🇸 美国 (United States) 78 - prime
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 79 - prime
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇺🇸 美国 (United States) 80 - prime
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 81 - prime
-  type: vless
-  server: 69.48.201.136
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usserver
-    headers:
-      Host: uspanel.unixzone.us
-- name: 🇺🇸 美国 (United States) 82 - prime
-  type: ss
-  server: 15.204.247.124
-  port: 2375
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: 🇺🇸 美国 (United States) 83 - prime
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 84 - prime
-  type: vless
-  server: 104.17.98.5
-  port: 443
-  uuid: 49ccad64-c854-4f33-b334-793cf0d02b74
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: newcscf.jisucf.cloudns.ch
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newcscf.jisucf.cloudns.ch
-- name: 🇺🇸 美国 (United States) 85 - prime
-  type: ss
-  server: 156.146.38.167
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 86 - prime
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 87 - prime
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 88 - prime
-  type: ss
-  server: 140.82.63.79
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: ZoZtfPOyVvmKARUN
-  udp: true
-- name: 🇺🇸 美国 (United States) 89 - prime
-  type: vless
-  server: 198.251.78.29
-  port: 2053
-  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 90 - prime
-  type: vless
-  server: 104.18.20.69
-  port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: us-lax.862400.xyz
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: us-lax.862400.xyz
-- name: 🇺🇸 美国 (United States) 91 - prime
-  type: vless
-  server: 107.173.237.146
-  port: 8443
-  uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 92 - prime
-  type: vless
-  server: 104.243.33.154
-  port: 45299
-  uuid: 261f011c-e97a-4d72-b596-e6329b50b47b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 93 - prime
-  type: ss
-  server: 216.52.183.174
-  port: 17036
-  cipher: aes-128-gcm
-  password: 9fbcf342cc8d6993ef6faf9ed65f8943
-  udp: true
-- name: 🇺🇸 美国 (United States) 94 - prime
-  type: ss
-  server: 64.74.161.149
-  port: 17202
-  cipher: aes-128-gcm
-  password: 1cbb3e347ee86e1980a7c731e9dd00a0
-  udp: true
-- name: 🇺🇸 美国 (United States) 95 - prime
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 96 - prime
-  type: ss
-  server: 198.98.53.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-  udp: true
-- name: 🇺🇸 美国 (United States) 97 - prime
-  type: vless
-  server: 104.243.33.154
-  port: 45299
-  uuid: 261f011c-e97a-4d72-b596-e6329b50b47b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 98 - prime
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 99 - prime
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 100 - prime
-  type: ss
-  server: 156.146.38.168
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 101 - prime
-  type: ss
-  server: 15.204.246.107
-  port: 8888
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇺🇸 美国 (United States) 102 - prime
-  type: vless
-  server: 104.16.10.135
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws#/?----?ed=512
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🇺🇸 美国 (United States) 103 - prime
-  type: vless
-  server: 69.48.201.136
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usserver
-    headers:
-      Host: zoom.us
-- name: 🇺🇸 美国 (United States) 104 - prime
-  type: vless
-  server: uspanel.unixzone.us
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usserver
-    headers:
-      Host: uspanel.unixzone.us
-- name: 🇺🇸 美国 (United States) 105 - prime
   type: vless
   server: cf.090227.xyz
   port: 443
@@ -1084,7 +45,34 @@ proxies:
     path: /
     headers:
       Host: lucasjow.us.ci
-- name: 🇺🇸 美国 (United States) 106 - prime
+- name: 🇺🇸 美国 (United States) 04 - prime
+  type: ss
+  server: 64.74.161.149
+  port: 17202
+  cipher: aes-128-gcm
+  password: 1cbb3e347ee86e1980a7c731e9dd00a0
+  udp: true
+- name: 🇺🇸 美国 (United States) 05 - prime
+  type: ss
+  server: 15.204.233.41
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇺🇸 美国 (United States) 06 - prime
+  type: vless
+  server: uspanel.unixzone.us
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: uspanel.unixzone.us
+- name: 🇺🇸 美国 (United States) 07 - prime
   type: vless
   server: 104.17.155.118
   port: 443
@@ -1098,7 +86,61 @@ proxies:
     path: t.me/TEAMNETGRATISCOL
     headers:
       Host: x.m-90.xyz
-- name: 🇺🇸 美国 (United States) 107 - prime
+- name: 🇺🇸 美国 (United States) 08 - prime
+  type: vless
+  server: 104.243.33.154
+  port: 45299
+  uuid: 261f011c-e97a-4d72-b596-e6329b50b47b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 09 - prime
+  type: vless
+  server: 107.173.237.146
+  port: 8443
+  uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc
+  servername: updates.cdn-apple.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 10 - prime
+  type: vless
+  server: 107.173.237.146
+  port: 8443
+  uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 11 - prime
+  type: ss
+  server: 108.181.0.177
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: G5p6ww4o67HB
+  udp: true
+- name: 🇺🇸 美国 (United States) 12 - prime
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇺🇸 美国 (United States) 13 - prime
   type: vmess
   server: 169.197.142.22
   port: 18000
@@ -1108,7 +150,458 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 108 - prime
+- name: 🇺🇸 美国 (United States) 14 - prime
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 15 - prime
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 16 - prime
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 17 - prime
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 18 - prime
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 19 - prime
+  type: ss
+  server: 156.146.38.167
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 20 - prime
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇺🇸 美国 (United States) 21 - prime
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 22 - prime
+  type: vless
+  server: 104.243.33.154
+  port: 45299
+  uuid: 261f011c-e97a-4d72-b596-e6329b50b47b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 23 - prime
+  type: vless
+  server: 107.173.237.146
+  port: 8443
+  uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc
+  servername: updates.cdn-apple.com
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 24 - prime
+  type: ss
+  server: 37.19.198.160
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 25 - prime
+  type: vless
+  server: 69.48.201.136
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: uspanel.unixzone.us
+- name: 🇺🇸 美国 (United States) 26 - prime
+  type: ss
+  server: 15.204.247.206
+  port: 4444
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+  udp: true
+- name: 🇺🇸 美国 (United States) 27 - prime
+  type: ss
+  server: 37.19.198.236
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 28 - prime
+  type: vless
+  server: uspanel.unixzone.us
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: uspanel.unixzone.us
+- name: 🇺🇸 美国 (United States) 29 - prime
+  type: vless
+  server: 2.56.172.107
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: /t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇺🇸 美国 (United States) 30 - prime
+  type: ss
+  server: 198.98.53.130
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: eDfN7SODQceIOmIAbtJJtK
+  udp: true
+- name: 🇺🇸 美国 (United States) 31 - prime
+  type: vless
+  server: 38.107.236.166
+  port: 8443
+  uuid: 48572af1-d091-457b-a86e-4a457e99927f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3h-unitedstates3.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 3h-unitedstates3.09vpn.com
+- name: 🇺🇸 美国 (United States) 32 - prime
+  type: ss
+  server: 140.82.63.79
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: ZoZtfPOyVvmKARUN
+  udp: true
+- name: 🇺🇸 美国 (United States) 33 - prime
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 34 - prime
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 35 - prime
+  type: vless
+  server: 104.243.33.154
+  port: 45299
+  uuid: 261f011c-e97a-4d72-b596-e6329b50b47b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 36 - prime
+  type: vless
+  server: 198.251.78.29
+  port: 2053
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 37 - prime
+  type: vless
+  server: 198.251.78.29
+  port: 2053
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 38 - prime
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🇺🇸 美国 (United States) 39 - prime
+  type: ss
+  server: 15.204.247.124
+  port: 2375
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
+- name: 🇺🇸 美国 (United States) 40 - prime
+  type: ss
+  server: 15.204.246.107
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇺🇸 美国 (United States) 41 - prime
+  type: ss
+  server: 37.19.198.244
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 42 - prime
+  type: ss
+  server: 108.181.118.10
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: G5p6ww4o67HB
+  udp: true
+- name: 🇺🇸 美国 (United States) 43 - prime
+  type: ss
+  server: 37.19.198.243
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 44 - prime
+  type: vless
+  server: 69.48.201.136
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: 69.48.201.136
+- name: 🇺🇸 美国 (United States) 45 - prime
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 46 - prime
+  type: vless
+  server: 198.251.78.29
+  port: 2053
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 47 - prime
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 48 - prime
+  type: vless
+  server: 198.251.78.29
+  port: 2053
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 49 - prime
+  type: vless
+  server: 69.48.201.136
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: zoom.us
+- name: 🇺🇸 美国 (United States) 50 - prime
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 51 - prime
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 52 - prime
+  type: vless
+  server: 104.17.154.214
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇺🇸 美国 (United States) 53 - prime
+  type: vless
+  server: 45.9.13.99
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇺🇸 美国 (United States) 54 - prime
+  type: ss
+  server: 216.105.168.158
+  port: 11332
+  cipher: aes-128-gcm
+  password: 404243f1f29932014b81216208f96031
+  udp: true
+- name: 🇺🇸 美国 (United States) 55 - prime
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 56 - prime
+  type: vless
+  server: 172.64.229.14
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇺🇸 美国 (United States) 57 - prime
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 58 - prime
   type: vless
   server: 172.64.229.14
   port: 443
@@ -1122,14 +615,35 @@ proxies:
     path: /t.me/TEAMNETGRATISCOL
     headers:
       Host: x.m-90.xyz
-- name: 🇺🇸 美国 (United States) 109 - prime
+- name: 🇺🇸 美国 (United States) 59 - prime
+  type: vless
+  server: 45.136.199.148
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇺🇸 美国 (United States) 60 - prime
   type: ss
-  server: 173.244.56.6
+  server: 156.146.38.167
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇺🇸 美国 (United States) 110 - prime
+- name: 🇺🇸 美国 (United States) 61 - prime
+  type: ss
+  server: 15.204.246.132
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: 🇺🇸 美国 (United States) 62 - prime
   type: vmess
   server: 129.146.77.248
   port: 39495
@@ -1144,44 +658,19 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: 129.146.77.248
-- name: 🇺🇸 美国 (United States) 111 - prime
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 112 - prime
+- name: 🇺🇸 美国 (United States) 63 - prime
   type: vless
-  server: 69.48.201.136
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usserver
-    headers:
-      Host: uspanel.unixzone.us
-- name: 🇺🇸 美国 (United States) 113 - prime
-  type: vless
-  server: 38.107.236.166
+  server: 107.173.237.146
   port: 8443
-  uuid: 48572af1-d091-457b-a86e-4a457e99927f
+  uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 3h-unitedstates3.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 3h-unitedstates3.09vpn.com
-- name: 🇺🇸 美国 (United States) 114 - prime
+  reality-opts:
+    public-key: D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 64 - prime
   type: vless
   server: 35.78.243.103
   port: 443
@@ -1195,7 +684,271 @@ proxies:
     path: t.me/TEAMNETGRATISCOL
     headers:
       Host: x.m-90.xyz
-- name: 🇺🇸 美国 (United States) 115 - prime
+- name: 🇺🇸 美国 (United States) 65 - prime
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 66 - prime
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 67 - prime
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 68 - prime
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: 🇺🇸 美国 (United States) 69 - prime
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 70 - prime
+  type: vless
+  server: 198.251.78.29
+  port: 2053
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 71 - prime
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 72 - prime
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 73 - prime
+  type: ss
+  server: 156.146.38.170
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 74 - prime
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 75 - prime
+  type: vless
+  server: uspanel.unixzone.us
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: uspanel.unixzone.us
+- name: 🇺🇸 美国 (United States) 76 - prime
+  type: vless
+  server: 104.17.98.5
+  port: 443
+  uuid: 49ccad64-c854-4f33-b334-793cf0d02b74
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: newcscf.jisucf.cloudns.ch
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newcscf.jisucf.cloudns.ch
+- name: 🇺🇸 美国 (United States) 77 - prime
+  type: vless
+  server: 104.17.98.5
+  port: 443
+  uuid: 49ccad64-c854-4f33-b334-793cf0d02b74
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: newcscf.jisucf.cloudns.ch
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newcscf.jisucf.cloudns.ch
+- name: 🇺🇸 美国 (United States) 78 - prime
+  type: vless
+  server: 104.17.98.5
+  port: 443
+  uuid: 49ccad64-c854-4f33-b334-793cf0d02b74
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: newcscf.jisucf.cloudns.ch
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newcscf.jisucf.cloudns.ch
+- name: 🇺🇸 美国 (United States) 79 - prime
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 80 - prime
+  type: ss
+  server: 5.78.51.123
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: 8tmnvX5zYuWGVIDP2jglZw
+  udp: true
+- name: 🇺🇸 美国 (United States) 81 - prime
+  type: vless
+  server: x.m-90.xyz
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇺🇸 美国 (United States) 82 - prime
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 83 - prime
+  type: ss
+  server: 108.181.57.93
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: RSo52SbxW40r
+  udp: true
+- name: 🇺🇸 美国 (United States) 84 - prime
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 85 - prime
+  type: ss
+  server: 108.181.0.177
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: G5p6ww4o67HB
+  udp: true
+- name: 🇺🇸 美国 (United States) 86 - prime
+  type: ss
+  server: 173.244.56.9
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 87 - prime
+  type: vless
+  server: 198.251.78.29
+  port: 2053
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 88 - prime
+  type: ss
+  server: 156.146.38.168
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 89 - prime
+  type: vless
+  server: 104.17.98.5
+  port: 443
+  uuid: 49ccad64-c854-4f33-b334-793cf0d02b74
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: newcscf.jisucf.cloudns.ch
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newcscf.jisucf.cloudns.ch
+- name: 🇺🇸 美国 (United States) 90 - prime
   type: vless
   server: 104.17.154.214
   port: 443
@@ -1209,13 +962,126 @@ proxies:
     path: t.me/TEAMNETGRATISCOL
     headers:
       Host: x.m-90.xyz
-- name: 🇺🇸 美国 (United States) 116 - prime
+- name: 🇺🇸 美国 (United States) 91 - prime
   type: ss
-  server: 5.78.51.123
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: 8tmnvX5zYuWGVIDP2jglZw
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
+- name: 🇺🇸 美国 (United States) 92 - prime
+  type: vless
+  server: 104.17.189.78
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🇺🇸 美国 (United States) 93 - prime
+  type: ss
+  server: 64.74.163.69
+  port: 18766
+  cipher: aes-128-gcm
+  password: 4efe1af272e7292139b889f6a63ee071
+  udp: true
+- name: 🇺🇸 美国 (United States) 94 - prime
+  type: vless
+  server: 129.225.175.227
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: /t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇺🇸 美国 (United States) 95 - prime
+  type: ss
+  server: 64.74.161.147
+  port: 17200
+  cipher: aes-128-gcm
+  password: 1cbb3e347ee86e1980a7c731e9dd00a0
+  udp: true
+- name: 🇺🇸 美国 (United States) 96 - prime
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 97 - prime
+  type: vless
+  server: 45.39.230.148
+  port: 2083
+  uuid: d1f68cb6-bfab-4c14-b1c8-f58d047d00e3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jrnkkm.de5.net
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 45.39.230.148
+- name: 🇺🇸 美国 (United States) 98 - prime
+  type: vless
+  server: uspanel.unixzone.us
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: uspanel.unixzone.us
+- name: 🇺🇸 美国 (United States) 99 - prime
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 100 - prime
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: 🇺🇸 美国 (United States) 101 - prime
+  type: vless
+  server: 198.251.78.29
+  port: 2053
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1322,21 +1188,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 99 - prime
   - 🇺🇸 美国 (United States) 100 - prime
   - 🇺🇸 美国 (United States) 101 - prime
-  - 🇺🇸 美国 (United States) 102 - prime
-  - 🇺🇸 美国 (United States) 103 - prime
-  - 🇺🇸 美国 (United States) 104 - prime
-  - 🇺🇸 美国 (United States) 105 - prime
-  - 🇺🇸 美国 (United States) 106 - prime
-  - 🇺🇸 美国 (United States) 107 - prime
-  - 🇺🇸 美国 (United States) 108 - prime
-  - 🇺🇸 美国 (United States) 109 - prime
-  - 🇺🇸 美国 (United States) 110 - prime
-  - 🇺🇸 美国 (United States) 111 - prime
-  - 🇺🇸 美国 (United States) 112 - prime
-  - 🇺🇸 美国 (United States) 113 - prime
-  - 🇺🇸 美国 (United States) 114 - prime
-  - 🇺🇸 美国 (United States) 115 - prime
-  - 🇺🇸 美国 (United States) 116 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1443,20 +1294,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 99 - prime
   - 🇺🇸 美国 (United States) 100 - prime
   - 🇺🇸 美国 (United States) 101 - prime
-  - 🇺🇸 美国 (United States) 102 - prime
-  - 🇺🇸 美国 (United States) 103 - prime
-  - 🇺🇸 美国 (United States) 104 - prime
-  - 🇺🇸 美国 (United States) 105 - prime
-  - 🇺🇸 美国 (United States) 106 - prime
-  - 🇺🇸 美国 (United States) 107 - prime
-  - 🇺🇸 美国 (United States) 108 - prime
-  - 🇺🇸 美国 (United States) 109 - prime
-  - 🇺🇸 美国 (United States) 110 - prime
-  - 🇺🇸 美国 (United States) 111 - prime
-  - 🇺🇸 美国 (United States) 112 - prime
-  - 🇺🇸 美国 (United States) 113 - prime
-  - 🇺🇸 美国 (United States) 114 - prime
-  - 🇺🇸 美国 (United States) 115 - prime
-  - 🇺🇸 美国 (United States) 116 - prime
 rules:
 - MATCH,PROXIES
