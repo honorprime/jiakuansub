@@ -27,41 +27,15 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇨🇭 CH 03 - prime
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 CH 04 - prime
+- name: 🇨🇭 CH 03 - prime
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇨🇭 CH 05 - prime
-  type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇨🇭 CH 06 - prime
+- name: 🇨🇭 CH 04 - prime
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -72,33 +46,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇨🇭 CH 07 - prime
-  type: vless
-  server: 185.18.250.245
-  port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /nl-tw
-    headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
-- name: 🇨🇭 CH 08 - prime
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -108,10 +56,6 @@ proxy-groups:
   - 🇨🇭 CH 02 - prime
   - 🇨🇭 CH 03 - prime
   - 🇨🇭 CH 04 - prime
-  - 🇨🇭 CH 05 - prime
-  - 🇨🇭 CH 06 - prime
-  - 🇨🇭 CH 07 - prime
-  - 🇨🇭 CH 08 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -121,9 +65,5 @@ proxy-groups:
   - 🇨🇭 CH 02 - prime
   - 🇨🇭 CH 03 - prime
   - 🇨🇭 CH 04 - prime
-  - 🇨🇭 CH 05 - prime
-  - 🇨🇭 CH 06 - prime
-  - 🇨🇭 CH 07 - prime
-  - 🇨🇭 CH 08 - prime
 rules:
 - MATCH,PROXIES
