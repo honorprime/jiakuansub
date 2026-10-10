@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇩 MD 01 - prime",
+        "🇲🇩 MD 02 - prime",
+        "🇲🇩 MD 03 - prime",
+        "🇲🇩 MD 04 - prime",
+        "🇲🇩 MD 05 - prime",
+        "🇲🇩 MD 06 - prime",
+        "🇲🇩 MD 07 - prime",
+        "🇲🇩 MD 08 - prime",
+        "🇲🇩 MD 09 - prime",
+        "🇲🇩 MD 10 - prime",
+        "🇲🇩 MD 11 - prime",
+        "🇲🇩 MD 12 - prime",
+        "🇲🇩 MD 13 - prime",
+        "🇲🇩 MD 14 - prime",
+        "🇲🇩 MD 15 - prime",
+        "🇲🇩 MD 16 - prime"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇩 MD 01 - prime",
+        "🇲🇩 MD 02 - prime",
+        "🇲🇩 MD 03 - prime",
+        "🇲🇩 MD 04 - prime",
+        "🇲🇩 MD 05 - prime",
+        "🇲🇩 MD 06 - prime",
+        "🇲🇩 MD 07 - prime",
+        "🇲🇩 MD 08 - prime",
+        "🇲🇩 MD 09 - prime",
+        "🇲🇩 MD 10 - prime",
+        "🇲🇩 MD 11 - prime",
+        "🇲🇩 MD 12 - prime",
+        "🇲🇩 MD 13 - prime",
+        "🇲🇩 MD 14 - prime",
+        "🇲🇩 MD 15 - prime",
+        "🇲🇩 MD 16 - prime"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
