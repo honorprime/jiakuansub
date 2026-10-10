@@ -6,13 +6,18 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - prime
   type: vless
-  server: 94.183.170.135
+  server: 77.72.85.247
   port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
 - name: 🇪🇪 EE 02 - prime
   type: vless
   server: 77.72.85.247
@@ -29,7 +34,7 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 03 - prime
   type: vless
-  server: 77.72.85.247
+  server: 77.72.85.246
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -43,13 +48,18 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 04 - prime
   type: vless
-  server: 94.183.170.135
+  server: 77.72.85.247
   port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
 - name: 🇪🇪 EE 05 - prime
   type: vless
   server: 77.72.85.246
@@ -66,29 +76,6 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 06 - prime
   type: vless
-  server: 77.72.85.247
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: 🇪🇪 EE 07 - prime
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 08 - prime
-  type: vless
   server: 94.183.170.135
   port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
@@ -100,7 +87,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 09 - prime
+- name: 🇪🇪 EE 07 - prime
   type: vless
   server: 94.183.170.135
   port: 443
@@ -113,7 +100,16 @@ proxies:
     path: /
     headers:
       Host: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 10 - prime
+- name: 🇪🇪 EE 08 - prime
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 09 - prime
   type: vless
   server: 77.72.85.246
   port: 8443
@@ -127,60 +123,6 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 11 - prime
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 12 - prime
-  type: vless
-  server: 77.72.85.246
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: 🇪🇪 EE 13 - prime
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 14 - prime
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 15 - prime
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select
@@ -195,12 +137,6 @@ proxy-groups:
   - 🇪🇪 EE 07 - prime
   - 🇪🇪 EE 08 - prime
   - 🇪🇪 EE 09 - prime
-  - 🇪🇪 EE 10 - prime
-  - 🇪🇪 EE 11 - prime
-  - 🇪🇪 EE 12 - prime
-  - 🇪🇪 EE 13 - prime
-  - 🇪🇪 EE 14 - prime
-  - 🇪🇪 EE 15 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -215,11 +151,5 @@ proxy-groups:
   - 🇪🇪 EE 07 - prime
   - 🇪🇪 EE 08 - prime
   - 🇪🇪 EE 09 - prime
-  - 🇪🇪 EE 10 - prime
-  - 🇪🇪 EE 11 - prime
-  - 🇪🇪 EE 12 - prime
-  - 🇪🇪 EE 13 - prime
-  - 🇪🇪 EE 14 - prime
-  - 🇪🇪 EE 15 - prime
 rules:
 - MATCH,PROXIES
