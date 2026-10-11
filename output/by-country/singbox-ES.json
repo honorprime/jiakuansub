@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY 01 - prime"
+        "🇪🇸 西班牙 (Spain) 01 - prime",
+        "🇪🇸 西班牙 (Spain) 02 - prime",
+        "🇪🇸 西班牙 (Spain) 03 - prime",
+        "🇪🇸 西班牙 (Spain) 04 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY 01 - prime"
+        "🇪🇸 西班牙 (Spain) 01 - prime",
+        "🇪🇸 西班牙 (Spain) 02 - prime",
+        "🇪🇸 西班牙 (Spain) 03 - prime",
+        "🇪🇸 西班牙 (Spain) 04 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
