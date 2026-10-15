@@ -5,21 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - prime
-  type: vless
-  server: 138.124.90.177
-  port: 10443
-  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇦🇹 AT 02 - prime
-  type: vless
-  server: 138.124.90.177
-  port: 10443
-  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇦🇹 AT 03 - prime
   type: vless
   server: 138.124.90.177
@@ -28,28 +26,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇦🇹 AT 04 - prime
-  type: vless
-  server: 138.124.90.177
-  port: 10443
-  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇦🇹 AT 05 - prime
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇦🇹 AT 06 - prime
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,9 +34,6 @@ proxy-groups:
   - 🇦🇹 AT 01 - prime
   - 🇦🇹 AT 02 - prime
   - 🇦🇹 AT 03 - prime
-  - 🇦🇹 AT 04 - prime
-  - 🇦🇹 AT 05 - prime
-  - 🇦🇹 AT 06 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,8 +42,5 @@ proxy-groups:
   - 🇦🇹 AT 01 - prime
   - 🇦🇹 AT 02 - prime
   - 🇦🇹 AT 03 - prime
-  - 🇦🇹 AT 04 - prime
-  - 🇦🇹 AT 05 - prime
-  - 🇦🇹 AT 06 - prime
 rules:
 - MATCH,PROXIES
