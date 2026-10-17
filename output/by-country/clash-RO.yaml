@@ -5,12 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - prime
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  server: roxnsk.color-shop.ir
+  port: 8080
+  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇷🇴 RO 02 - prime
   type: vless
   server: edge10.cyrionflare.com
@@ -20,6 +21,13 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 03 - prime
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
+- name: 🇷🇴 RO 04 - prime
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -27,7 +35,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇷🇴 RO 04 - prime
+- name: 🇷🇴 RO 05 - prime
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -44,6 +52,7 @@ proxy-groups:
   - 🇷🇴 RO 02 - prime
   - 🇷🇴 RO 03 - prime
   - 🇷🇴 RO 04 - prime
+  - 🇷🇴 RO 05 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +62,6 @@ proxy-groups:
   - 🇷🇴 RO 02 - prime
   - 🇷🇴 RO 03 - prime
   - 🇷🇴 RO 04 - prime
+  - 🇷🇴 RO 05 - prime
 rules:
 - MATCH,PROXIES
