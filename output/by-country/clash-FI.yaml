@@ -6,26 +6,17 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - prime
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: mci1.amir12.ir
+  port: 1222
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+  servername: play.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 02 - prime
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 03 - prime
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -37,7 +28,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 04 - prime
+- name: 🇫🇮 FI 03 - prime
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -48,6 +39,18 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 04 - prime
+  type: vless
+  server: mci.amir12.ir
+  port: 2112
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
+  servername: play.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 FI 05 - prime
   type: vless
@@ -60,8 +63,15 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇫🇮 FI 06 - prime
+  type: ss
+  server: b2a2.velqixa.ir
+  port: 39221
+  cipher: chacha20-ietf-poly1305
+  password: Pzlcb_PeV3uRgiC2NNoNKw
+  udp: true
+- name: 🇫🇮 FI 07 - prime
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -72,7 +82,20 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 08 - prime
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +107,8 @@ proxy-groups:
   - 🇫🇮 FI 04 - prime
   - 🇫🇮 FI 05 - prime
   - 🇫🇮 FI 06 - prime
+  - 🇫🇮 FI 07 - prime
+  - 🇫🇮 FI 08 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -95,5 +120,7 @@ proxy-groups:
   - 🇫🇮 FI 04 - prime
   - 🇫🇮 FI 05 - prime
   - 🇫🇮 FI 06 - prime
+  - 🇫🇮 FI 07 - prime
+  - 🇫🇮 FI 08 - prime
 rules:
 - MATCH,PROXIES
