@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - prime"
+        "🇱🇰 LK 01 - prime",
+        "🇱🇰 LK 02 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - prime"
+        "🇱🇰 LK 01 - prime",
+        "🇱🇰 LK 02 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
