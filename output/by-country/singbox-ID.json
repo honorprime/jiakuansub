@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 ID 01 - prime"
+        "🇮🇩 ID 01 - prime",
+        "🇮🇩 ID 02 - prime",
+        "🇮🇩 ID 03 - prime",
+        "🇮🇩 ID 04 - prime",
+        "🇮🇩 ID 05 - prime",
+        "🇮🇩 ID 06 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 ID 01 - prime"
+        "🇮🇩 ID 01 - prime",
+        "🇮🇩 ID 02 - prime",
+        "🇮🇩 ID 03 - prime",
+        "🇮🇩 ID 04 - prime",
+        "🇮🇩 ID 05 - prime",
+        "🇮🇩 ID 06 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
