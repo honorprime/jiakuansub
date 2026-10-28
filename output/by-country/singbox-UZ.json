@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇿 AZ 01 - prime",
-        "🇦🇿 AZ 02 - prime"
+        "🇺🇿 UZ 01 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇿 AZ 01 - prime",
-        "🇦🇿 AZ 02 - prime"
+        "🇺🇿 UZ 01 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
