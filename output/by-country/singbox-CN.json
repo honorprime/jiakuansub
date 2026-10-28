@@ -6,16 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - prime",
-        "🇦🇺 澳大利亚 (Australia) 02 - prime"
+        "🇨🇳 CN 01 - prime",
+        "🇨🇳 CN 02 - prime",
+        "🇨🇳 CN 03 - prime",
+        "🇨🇳 CN 04 - prime",
+        "🇨🇳 CN 05 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - prime",
-        "🇦🇺 澳大利亚 (Australia) 02 - prime"
+        "🇨🇳 CN 01 - prime",
+        "🇨🇳 CN 02 - prime",
+        "🇨🇳 CN 03 - prime",
+        "🇨🇳 CN 04 - prime",
+        "🇨🇳 CN 05 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
