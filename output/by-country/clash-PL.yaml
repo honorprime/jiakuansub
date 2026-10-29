@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - prime
+  type: ss
+  server: pol.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 8z2OB_gvFvpKgjFi8s9Cvw
+  udp: true
+- name: 🇵🇱 PL 02 - prime
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -12,7 +19,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 02 - prime
+- name: 🇵🇱 PL 03 - prime
   type: vless
   server: site.teslamotor.site
   port: 20001
@@ -20,7 +27,15 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 03 - prime
+- name: 🇵🇱 PL 04 - prime
+  type: vless
+  server: 168.222.43.53
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 05 - prime
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -29,22 +44,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 04 - prime
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 05 - prime
-  type: vless
-  server: 168.222.43.53
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇵🇱 PL 06 - prime
   type: vless
   server: 2.26.6.1
@@ -89,6 +88,30 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 11 - prime
   type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 12 - prime
+  type: vless
+  server: 168.222.43.53
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 13 - prime
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 14 - prime
+  type: vless
   server: 155.117.5.208
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
@@ -111,6 +134,9 @@ proxy-groups:
   - 🇵🇱 PL 09 - prime
   - 🇵🇱 PL 10 - prime
   - 🇵🇱 PL 11 - prime
+  - 🇵🇱 PL 12 - prime
+  - 🇵🇱 PL 13 - prime
+  - 🇵🇱 PL 14 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -127,5 +153,8 @@ proxy-groups:
   - 🇵🇱 PL 09 - prime
   - 🇵🇱 PL 10 - prime
   - 🇵🇱 PL 11 - prime
+  - 🇵🇱 PL 12 - prime
+  - 🇵🇱 PL 13 - prime
+  - 🇵🇱 PL 14 - prime
 rules:
 - MATCH,PROXIES
