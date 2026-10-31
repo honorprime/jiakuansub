@@ -5,31 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - prime
-  type: vless
-  server: 104.21.29.202
+  type: vmess
+  server: vah4urdzl3jdx5r2.v.3dns.vip
   port: 443
-  uuid: 326227e2-f2d1-4f43-8715-9da854f5f4c0
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: px2.5ibtc.cn
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
   network: ws
   ws-opts:
-    path: /326227e2-f2d1-4f43-8715-9da854f5f4c0
+    path: /ws-vmess
     headers:
-      Host: px2.5ibtc.cn
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - prime
   type: vless
-  server: 47.238.210.5
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  server: 195.58.144.56
+  port: 11907
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-  servername: tesla.com
-  client-fingerprint: chrome
+  servername: 195.58.144.56
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - prime
   type: vmess
   server: 156.245.232.239
@@ -46,56 +45,20 @@ proxies:
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - prime
-  type: vmess
-  server: 47.243.194.125
+  type: vless
+  server: 172.67.149.199
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  uuid: 326227e2-f2d1-4f43-8715-9da854f5f4c0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nycqg19zkwacpm1b.v.3dns.vip
+  servername: px2.5ibtc.cn
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /326227e2-f2d1-4f43-8715-9da854f5f4c0
     headers:
-      Host: nycqg19zkwacpm1b.v.3dns.vip
+      Host: px2.5ibtc.cn
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - prime
-  type: vless
-  server: 195.58.144.56
-  port: 11907
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195.58.144.56
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - prime
-  type: vmess
-  server: rhhierkwrf6fhs2h.v.3dns.vip
-  port: 443
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rhhierkwrf6fhs2h.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: rhhierkwrf6fhs2h.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - prime
-  type: vless
-  server: 152.175.6.229
-  port: 31884
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hk010.zestapp778.com
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - prime
   type: vmess
   server: euu1yalfmcqvljex.v.3dns.vip
   port: 443
@@ -111,6 +74,52 @@ proxies:
     path: /ws-vmess
     headers:
       Host: euu1yalfmcqvljex.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - prime
+  type: vless
+  server: 104.21.29.202
+  port: 443
+  uuid: 326227e2-f2d1-4f43-8715-9da854f5f4c0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: px2.5ibtc.cn
+  network: ws
+  ws-opts:
+    path: /326227e2-f2d1-4f43-8715-9da854f5f4c0
+    headers:
+      Host: px2.5ibtc.cn
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - prime
+  type: vmess
+  server: euu1yAlfmcqvLJEx.v.3dns.vip
+  port: 443
+  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: euu1yAlfmcqvLJEx.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: euu1yAlfmcqvLJEx.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - prime
+  type: vmess
+  server: rhHiErkwRf6fHs2H.v.3dns.vip
+  port: 443
+  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rhHiErkwRf6fHs2H.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: rhHiErkwRf6fHs2H.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - prime
   type: vmess
   server: rhHiErkwRf6fHs2H.v.3dns.vip
@@ -128,22 +137,8 @@ proxies:
     headers:
       Host: rhHiErkwRf6fHs2H.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - prime
-  type: vless
-  server: 172.67.149.199
-  port: 443
-  uuid: 326227e2-f2d1-4f43-8715-9da854f5f4c0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: px2.5ibtc.cn
-  network: ws
-  ws-opts:
-    path: /326227e2-f2d1-4f43-8715-9da854f5f4c0
-    headers:
-      Host: px2.5ibtc.cn
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - prime
   type: vmess
-  server: 47.243.194.125
+  server: 47.76.57.83
   port: 443
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
@@ -151,12 +146,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nycqg19zkwacpm1b.v.3dns.vip
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: nycqg19zkwacpm1b.v.3dns.vip
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -172,7 +167,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - prime
   - 🇭🇰 中国香港 (Hong Kong) 09 - prime
   - 🇭🇰 中国香港 (Hong Kong) 10 - prime
-  - 🇭🇰 中国香港 (Hong Kong) 11 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -188,6 +182,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - prime
   - 🇭🇰 中国香港 (Hong Kong) 09 - prime
   - 🇭🇰 中国香港 (Hong Kong) 10 - prime
-  - 🇭🇰 中国香港 (Hong Kong) 11 - prime
 rules:
 - MATCH,PROXIES
