@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇱🇰 LK 01 - prime",
-        "🇱🇰 LK 02 - prime"
+        "🇱🇰 LK 02 - prime",
+        "🇱🇰 LK 03 - prime",
+        "🇱🇰 LK 04 - prime"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇰 LK 01 - prime",
-        "🇱🇰 LK 02 - prime"
+        "🇱🇰 LK 02 - prime",
+        "🇱🇰 LK 03 - prime",
+        "🇱🇰 LK 04 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
