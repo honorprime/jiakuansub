@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - prime",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - prime"
+        "🇱🇰 LK 01 - prime",
+        "🇱🇰 LK 02 - prime",
+        "🇱🇰 LK 03 - prime"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - prime",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - prime"
+        "🇱🇰 LK 01 - prime",
+        "🇱🇰 LK 02 - prime",
+        "🇱🇰 LK 03 - prime"
       ],
       "url": "https://www.google.com/generate_204"
     },
