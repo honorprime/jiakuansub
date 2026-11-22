@@ -18,20 +18,6 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - prime
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 16f63796-3e98-5a7b-b016-540ce6e79007
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se1.v2less.site
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: se1.v2less.site
-- name: 🇸🇪 SE 03 - prime
   type: ss
   server: 138.199.55.243
   port: 19999
@@ -45,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - prime
   - 🇸🇪 SE 02 - prime
-  - 🇸🇪 SE 03 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - prime
   - 🇸🇪 SE 02 - prime
-  - 🇸🇪 SE 03 - prime
 rules:
 - MATCH,PROXIES
