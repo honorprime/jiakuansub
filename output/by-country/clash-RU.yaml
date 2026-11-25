@@ -15,13 +15,18 @@ proxies:
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 02 - prime
   type: vless
-  server: 136.148.83.70
+  server: 147.45.221.225
   port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
+  servername: nl.lucheeebezlimitnoekino.stream
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 147.45.221.225
 - name: 🇷🇺 俄罗斯 (Russia) 03 - prime
   type: vless
   server: 136.148.83.70
@@ -32,6 +37,15 @@ proxies:
   skip-cert-verify: true
   servername: aszbk-ru-78dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 04 - prime
+  type: vless
+  server: 136.148.83.70
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aszbk-ru-78dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 05 - prime
   type: vless
   server: 147.45.175.81
   port: 443
@@ -45,20 +59,6 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 05 - prime
-  type: vless
-  server: 147.45.221.225
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nl.lucheeebezlimitnoekino.stream
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: 147.45.221.225
 - name: 🇷🇺 俄罗斯 (Russia) 06 - prime
   type: vless
   server: 136.148.83.69
@@ -68,31 +68,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 07 - prime
-  type: vless
-  server: 136.148.83.70
-  port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 08 - prime
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 09 - prime
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -104,9 +79,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - prime
   - 🇷🇺 俄罗斯 (Russia) 05 - prime
   - 🇷🇺 俄罗斯 (Russia) 06 - prime
-  - 🇷🇺 俄罗斯 (Russia) 07 - prime
-  - 🇷🇺 俄罗斯 (Russia) 08 - prime
-  - 🇷🇺 俄罗斯 (Russia) 09 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -118,8 +90,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - prime
   - 🇷🇺 俄罗斯 (Russia) 05 - prime
   - 🇷🇺 俄罗斯 (Russia) 06 - prime
-  - 🇷🇺 俄罗斯 (Russia) 07 - prime
-  - 🇷🇺 俄罗斯 (Russia) 08 - prime
-  - 🇷🇺 俄罗斯 (Russia) 09 - prime
 rules:
 - MATCH,PROXIES
