@@ -13,32 +13,21 @@ proxies:
   udp: true
 - name: 🇨🇭 CH 02 - prime
   type: ss
-  server: 186.190.215.251
+  server: 23.166.88.189
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 CH 03 - prime
-  type: vmess
-  server: 186.190.215.4
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇨🇭 CH 04 - prime
   type: ss
-  server: 79.127.184.104
+  server: 186.190.215.251
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇨🇭 CH 05 - prime
+- name: 🇨🇭 CH 04 - prime
   type: ss
-  server: 23.166.88.189
+  server: 79.127.184.104
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -52,7 +41,6 @@ proxy-groups:
   - 🇨🇭 CH 02 - prime
   - 🇨🇭 CH 03 - prime
   - 🇨🇭 CH 04 - prime
-  - 🇨🇭 CH 05 - prime
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,6 +50,5 @@ proxy-groups:
   - 🇨🇭 CH 02 - prime
   - 🇨🇭 CH 03 - prime
   - 🇨🇭 CH 04 - prime
-  - 🇨🇭 CH 05 - prime
 rules:
 - MATCH,PROXIES
